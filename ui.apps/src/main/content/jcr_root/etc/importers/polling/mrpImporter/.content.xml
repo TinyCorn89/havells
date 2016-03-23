@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:Folder"
+          source="mrp-importer-scheme:inporterSource"
+          login="admin"
+          enabled="{Boolean}false"
+          password="admin"
+          target="/etc/commerce/products/havells"
+          jcr:mixinTypes="cq:PollConfig"
+          interval="300"/>

@@ -1,0 +1,11 @@
+.coral-FixedColumn-column {
+    width: 68rem;
+}
+
+.coral-Form--vertical .coral-Form-field.coral-Autocomplete {
+    width: 700px !important;
+}
+
+.coral-Form--vertical .coral-Form-field.coral-InputGroup {
+    width: 700px !important;
+}

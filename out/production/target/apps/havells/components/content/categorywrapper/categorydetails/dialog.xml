@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="400"
+    title="Category Details"
+    width="600"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <details
+                jcr:primaryType="cq:Widget"
+                title="Details"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Heading"
+                        height="100"
+                        name="./heading"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </heading>
+                    <description
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Description"
+                        name="./description"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </description>
+                </items>
+            </details>
+            <tab4
+                jcr:primaryType="cq:Widget"
+                anchor="100%"
+                title="Text Properties"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <position
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Text Alignment"
+                        name="./textPosition"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <o1
+                                jcr:primaryType="nt:unstructured"
+                                text="Left"
+                                value="left"/>
+                            <o2
+                                jcr:primaryType="nt:unstructured"
+                                text="Right"
+                                value="right"/>
+                        </options>
+                    </position>
+                </items>
+            </tab4>
+            <tab2
+                jcr:primaryType="cq:Widget"
+                ddGroups="[media]"
+                fileNameParameter="./fileName"
+                fileReferenceParameter="./fileReference"
+                mapParameter="./imageMap"
+                name="./file"
+                requestSuffix=".img.png"
+                title="Image"
+                xtype="html5smartimage"/>
+            <tab3
+                jcr:primaryType="cq:Widget"
+                title="Advanced Image Properties"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <alt
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="(leave empty to use the title defined above)"
+                        fieldLabel="Alt Text"
+                        name="./alt"
+                        xtype="textfield"/>
+                    <resType
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="{Boolean}true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                    <linkURL
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Drop files or pages from the Content Finder"
+                        fieldLabel="Link to"
+                        name="./linkURL"
+                        xtype="pathfield"/>
+                </items>
+            </tab3>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          helpPath="en/cq/current/wcm/default_components.html#List"
+          manageTabs="function(tab,noSwitch){var tabs=['props','video','image'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+          title="List"
+          xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <video
+                jcr:primaryType="cq:Widget"
+                title="Video"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <id
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Video ID"
+                        name="./videoID"
+                        xtype="textfield"/>
+                <label
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Video label (to be shown below Video link)"
+                        fieldLabel="Label"
+                        name="./videolabel"
+                        xtype="textfield"/>
+                <view
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="fancybox"
+                        fieldLabel="Play with:"
+                        name="./viewType"
+                        type="select"
+                        xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <fancybox
+                                jcr:primaryType="nt:unstructured"
+                                text="Fancy box"
+                                value="fancybox"/>
+                        <embed
+                                jcr:primaryType="nt:unstructured"
+                                text="Embedded"
+                                value="embed"/>
+                    </options>
+                </view>
+                <size
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Size"
+                        heightParameter="./height"
+                        widthParameter="./width"
+                        xtype="sizefield"/>
+            </items>
+        </video>
+    </items>
+</jcr:root>

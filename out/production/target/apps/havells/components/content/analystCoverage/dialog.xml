@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Analyst Coverage"
+    width="660"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <panel
+                jcr:primaryType="cq:Panel"
+                title="Analyst Coverage Data">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <fieldMargin
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Spacing between the rows"
+                            fieldLabel="Row Margin"
+                            name="./margin"
+                            xtype="numberfield"/>
+                    <fieldInfo
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Click the '+' to add a new Column"
+                            fieldLabel="Column"
+                            name="./headerInfo"
+                            xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                border="true"
+                                hideLabel="{Boolean}true"
+                                layout="form"
+                                xtype="multifiedpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <name
+                                        jcr:primaryType="cq:Widget"
+                                        dName="field"
+                                        fieldLabel="Field Name"
+                                        fieldDescription="Name of the column"
+                                        xtype="textfield"/>
+                                <width
+                                        jcr:primaryType="cq:Widget"
+                                        dName="width"
+                                        fieldLabel="Field Width"
+                                        fieldDescription="In Percentage(%)"
+                                        xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </fieldInfo>
+                </items>
+            </panel>
+        </items>
+    </items>
+</jcr:root>

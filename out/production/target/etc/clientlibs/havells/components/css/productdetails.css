@@ -1,0 +1,50 @@
+.featuresDiv .featuresLeft .featuresAccWrapper {
+    width:100%;
+}
+.featuresLeft .featuresAccWrapper .featureClicker {
+    width:100%;
+    margin:0 0 2px 0;
+}
+.featuresLeft .featuresAccWrapper .featureContent {
+    width:100%;
+}
+.featuresLeft .featuresAccWrapper .featureClicker a {
+    display:block;
+    color:#313131;
+    font-size:14px;
+    padding:10px 3% 10px 3%;
+    text-transform:uppercase;
+    font-weight:bold;
+    text-decoration:none;
+    background:#f7f7f7;
+    position:relative;
+}
+.featuresLeft .featuresAccWrapper .featureClicker a:before {
+    position:absolute;
+    left:5px;
+    top:9px;
+    content:"+";
+    color:#ee3b3b;
+    font-size:14px;
+    font-weight:bold;
+}
+.featuresLeft .featuresAccWrapper .featureClicker a.active:before {
+    content:"-";
+    top:7px;
+    left:7px;
+}
+.featuresLeft .featuresAccWrapper .featureContent ul {
+    padding:13px 0 0 6%;
+    margin:0px;
+}
+.featuresLeft .featuresAccWrapper .featureContent ul li {
+    padding:0 0 5px 5px;
+}
+
+.featuresLeft .videoWrapper .videoSlider .slick-slider .slick-dots{
+	bottom: -30px !important;
+}
+
+.featuresLeft .videoWrapper .videoSlider {
+	height:175px !important;
+}

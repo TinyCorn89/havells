@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Recommendations Configuration"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <algorithm
+            jcr:primaryType="cq:Widget"
+            allowBlank="{Boolean}false"
+            defaultValue=""
+            fieldDescription="Algorithm used to choose displayed recommendations"
+            fieldLabel="Algorithm"
+            name="./algorithm"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <tags
+                    jcr:primaryType="nt:unstructured"
+                    text="Tags"
+                    value="tags"/>
+                <category
+                    jcr:primaryType="nt:unstructured"
+                    text="Category"
+                    value="category"/>
+            </options>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                selectionchanged="function(selectField, value, isChecked) {CQ.Recommendations.Authoring.showHideManualSource(selectField, true);}"/>
+        </algorithm>
+        <recSource
+            jcr:primaryType="cq:Widget"
+            allowBlank="{Boolean}false"
+            defaultValue=""
+            fieldDescription="Data source for the selected algorithm"
+            fieldLabel="Recs Source"
+            name="./recSource"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <currentProduct
+                    jcr:primaryType="nt:unstructured"
+                    text="Current Product"
+                    value="product"/>
+                <shoppingCart
+                    jcr:primaryType="nt:unstructured"
+                    text="Shopping Cart"
+                    value="cart"/>
+                <manual
+                    jcr:primaryType="nt:unstructured"
+                    text="Manual"
+                    value="manual"/>
+            </options>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                selectionchanged="function(selectField, value, isChecked) {CQ.Recommendations.Authoring.showHideManualSource(selectField);}"/>
+        </recSource>
+        <manualSource
+            jcr:primaryType="cq:Widget"
+            name="./manualSource"
+            xtype="hidden">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                loadcontent="function(field, record, path){CQ.Recommendations.Authoring.showHideManualSource(field);}"/>
+        </manualSource>
+        <minRating
+            jcr:primaryType="cq:Widget"
+            defaultValue="0"
+            fieldDescription="Only show products with at least this number of stars"
+            fieldLabel="Minimum rating"
+            name="./minRating"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <noStars
+                    jcr:primaryType="nt:unstructured"
+                    text="No rating"
+                    value="0"/>
+                <oneStar
+                    jcr:primaryType="nt:unstructured"
+                    text="1 star"
+                    value="1"/>
+                <twoStars
+                    jcr:primaryType="nt:unstructured"
+                    text="2 stars"
+                    value="2"/>
+                <threeStars
+                    jcr:primaryType="nt:unstructured"
+                    text="3 stars"
+                    value="3"/>
+                <fourStars
+                    jcr:primaryType="nt:unstructured"
+                    text="4 stars"
+                    value="4"/>
+                <fiveStars
+                    jcr:primaryType="nt:unstructured"
+                    text="5 stars"
+                    value="5"/>
+            </options>
+        </minRating>
+        <productCount
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Maximum number of products to fetch and display"
+            fieldLabel="Product count"
+            name="./productCount"
+            vtype="digits"
+            xtype="textfield"/>
+    </items>
+</jcr:root>

@@ -1,0 +1,11 @@
+
+.productMainDivLeft{
+	height:200px; overflow:auto;
+}
+
+.variantsInner img{
+	cursor: pointer;
+}
+.variantsInner p{
+	cursor: pointer;
+}

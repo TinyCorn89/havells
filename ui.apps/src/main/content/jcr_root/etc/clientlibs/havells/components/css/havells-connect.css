@@ -1,0 +1,22 @@
+.havells-connect-wrapper .havellsConnectBg .havellsConnectOptionWrapper .row-border{
+    border-bottom: #d1d1d1 solid 1px;
+}
+.havells-connect-wrapper .havellsConnectBg .havellsConnectOptionWrapper{
+    float: none;
+}
+.havells-connect-wrapper .havellsConnectBg .havellsConnectOptionWrapper ul li{
+    float: none;
+}
+.havells-connect-wrapper .col.havellsConnectBg{
+    float: none;
+    width: 100%;
+}
+.havellsConnectBg .havellsConnectOptionWrapper ul li.icn1{
+    background-repeat: no-repeat;
+}
+.havellsConnectBg .havellsConnectOptionWrapper ul li.icn2{
+    background-repeat: no-repeat;
+}
+.havellsConnectBg .havellsConnectOptionWrapper ul li.icn3{
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <thankuMsg
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Thank you for submitting your query."
+                        fieldLabel="Text for Thankyou Message"
+                        name="./thankuText"
+                        xtype="richtext"/>
+                    <userError
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="User already exists."
+                            fieldLabel="Text for User Error"
+                            name="./userError"
+                            xtype="textfield"/>
+                    <serverError
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="Sorry some error occured."
+                            fieldLabel="Text for Server Error"
+                            name="./serverError"
+                            xtype="textfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

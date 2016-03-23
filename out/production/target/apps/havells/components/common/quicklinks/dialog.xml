@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          title="QuickLinks"
+          width="660"
+          xtype="dialog">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab2
+                    jcr:primaryType="cq:Panel"
+                    title="QuickLinks Tab">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Provide quick links title"
+                            fieldLabel="quickLinkTitle"
+                            name="./quickLinkTitle"
+                            xtype="textfield">
+                    </title>
+                </items>
+            </tab2>
+            <panel
+                    jcr:primaryType="cq:Panel"
+                    title="Links">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <links
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Click the '+' to add a new link"
+                            fieldLabel="Pages"
+                            name="./links"
+                            xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                border="true"
+                                hideLabel="{Boolean}true"
+                                layout="form"
+                                xtype="multifiedpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <link
+                                        jcr:primaryType="cq:Widget"
+                                        dName="link"
+                                        fieldLabel="Link Text"
+                                        xtype="textfield"/>
+                                <path
+                                        jcr:primaryType="cq:Widget"
+                                        dName="path"
+                                        fieldLabel="Path"
+                                        xtype="pathfield"/>
+                                <linkIcon
+                                        jcr:primaryType="cq:Widget"
+                                        defaultValue="none"
+                                        dName="icon"
+                                        fieldLabel="Icon"
+                                        type="select"
+                                        value="none"
+                                        xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <fa-gear
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Gear"
+                                                value="fa-gear"/>
+                                        <fa-shopping-cart
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Shopping Cart"
+                                                value="fa-shopping-cart"/>
+                                        <fa-info
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Info"
+                                                value="fa-info"/>
+                                        <fa-map-marker
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Map Marker"
+                                                value="fa-map-marker"/>
+                                        <fa-question
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Question"
+                                                value="fa-question"/>
+                                        <none
+                                                jcr:primaryType="nt:unstructured"
+                                                text="None"
+                                                value="none"/>
+                                    </options>
+                                </linkIcon>
+                            </items>
+                        </fieldConfig>
+                    </links>
+                </items>
+            </panel>
+        </items>
+    </items>
+</jcr:root>

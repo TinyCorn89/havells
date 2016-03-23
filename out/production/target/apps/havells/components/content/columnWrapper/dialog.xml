@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="{Long}400"
+    title="Media Column"
+    width="{Long}600"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Columns">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <select
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select"
+                        name="./column"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <One
+                                    jcr:primaryType="nt:unstructured"
+                                    text="One"
+                                    value="one-col"/>
+                            <Two
+                                jcr:primaryType="nt:unstructured"
+                                text="Two"
+                                value="two-col"/>
+                            <Three
+                                jcr:primaryType="nt:unstructured"
+                                text="Three"
+                                value="three-col"/>
+                            <Four
+                                jcr:primaryType="nt:unstructured"
+                                text="Four"
+                                value="four-col"/>
+                            <Five
+                                jcr:primaryType="nt:unstructured"
+                                text="Five"
+                                value="five-col"/>
+                        </options>
+                    </select>
+                    <margin
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Long}1"
+                        fielddescription="this margin is between columns. 0.5px,1px etc."
+                        fieldLabel="Margin in px"
+                        name="./margin"
+                        xtype="numberfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

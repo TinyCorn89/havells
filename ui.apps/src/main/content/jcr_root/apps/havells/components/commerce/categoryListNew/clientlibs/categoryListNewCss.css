@@ -1,0 +1,182 @@
+.appliancesContainer a {
+    display: inline-block;
+}
+
+.appliancesContainer {
+    width: 92%;
+    float: left;
+    background: url(/etc/clientlibs/havells/image/vertical-line.png) center top repeat-y;
+    margin-bottom: 30px;
+}
+
+.appliancesContainer2 {
+    background: url(/etc/clientlibs/havells/image/vertical-line.png) center top repeat-y;
+}
+
+.category {
+    width: auto;
+    float: left;
+    background: #e02626;
+    color: #fff;
+    padding: 8px 14px;
+    font-family: 'SegoeUI';
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 0 38%;
+}
+
+.appliancesContainer .appliancesLeft {
+    width: 50%;
+    float: left;
+    position: relative;
+    margin: 15px 0 0 0;
+}
+
+.appliancesContainer .applincesExplore {
+    width: 239px;
+    float: left;
+}
+
+.appliancesContainer .prep {
+    width: 80%;
+    float: left;
+    margin: 0 10%;
+    border: 1px solid #cecece;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    font-family: 'SegoeUI';
+    font-size: 18px;
+    color: #737373;
+    background: #fff;
+}
+
+.newClass{ position:relative}
+.newClass:before{ content:""; width:1px; border-left:solid 1px #fff; height:100%; position:absolute; top:28px}
+.appliancesLeft.newClass:before{ content:""; width:1px; right: -1px; border-right:solid 1px #fff; height:100%; position:absolute; top:28px}
+
+
+.appliancesContainer .applincesImage {
+    width: 100%;
+    float: left;
+    border: 1px solid #cccccc;
+    height: 202px;
+    line-height: 202px;
+    text-align: center;
+    margin: -12px 0 0 0;
+    position: relative;
+    z-index: -1;
+    background: #f0f0f0;
+}
+
+.appliancesContainer .applincesImage img {
+    width: 100%;
+    height: 202px;
+}
+
+.appliancesContainer .exploreTxt {
+    width: 90px;
+    margin: -10px 0 0 30%;
+    text-align: center;
+    font-family: 'SegoeUI';
+    font-size: 13px;
+    border: 1px solid #cecece;
+    float: left;
+    background: #fff;
+    text-transform: uppercase;
+}
+
+.appliancesContainer .exploreTxt {
+    color: #737373;
+    text-decoration: none;
+    display: block;
+    padding: 6px 0;
+}
+
+.appliancesContainer .applincesExplore:hover  .exploreTxt, .appliancesContainer .applincesExplore:hover .prep {
+    color: red;
+}
+
+.appliancesCircle {
+    position: absolute;
+    top: 47px;
+    right: 0px;
+    border-top: 1px solid #cecece;
+    width: 97px;
+}
+
+.appliancesCircle2 {
+    background: url(/etc/clientlibs/havells/image/circle-sprite.png) right top no-repeat;
+    display: block;
+    height: 45px;
+    position: absolute;
+    right: -21px;
+    top: -23px;
+    width: 100%;
+}
+
+.appliancesContainer  .applincesExplore:hover .appliancesCircle2 {
+    background: url(/etc/clientlibs/havells/image/circle-sprite.png) right -60px no-repeat;
+}
+
+.appliancesContainer  .applincesExplore:hover .appliancesCircle2Right {
+    background: url(/etc/clientlibs/havells/image/circle-sprite.png) left -60px no-repeat;
+}
+
+.appliancesContainer .appliancesRight {
+    width: 50%;
+    float: left;
+    position: relative;
+    margin: 125px 0 -75px 0;
+}
+
+.appliancesContainer .exploreRight {
+    float: right;
+    margin: 0 0 0 95px;
+}
+
+.appliancesCircleRight {
+    border-top: 1px solid #cecece;
+    position: absolute;
+    left: 0;
+    top: 47px;
+    width: 97px;
+}
+
+.appliancesCircle2Right {
+    background: url(/etc/clientlibs/havells/image/circle-sprite.png) no-repeat left top;
+    display: block;
+    height: 45px;
+    position: absolute;
+    left: -24px;
+    top: -23px;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 479px){
+    .appliancesContainer {
+        width: 100%;
+        float: left;
+        background: none;
+    }
+    .appliancesCircle {
+        display: none;
+    }
+    .appliancesCircleRight {
+        display: none;
+    }
+    .appliancesContainer .applincesExplore {
+        width: 100%;
+        float: left;
+        margin-bottom: 30px;
+    }
+    .appliancesContainer .appliancesLeft {
+        width: 100%;
+        float: left;
+    }
+    .appliancesContainer .appliancesRight {
+        margin: 0px;
+        width: 100%;
+        float: left;
+    }
+}

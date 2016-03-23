@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Recently Viewed Products"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            emptyText="Recently Viewed"
+            fieldLabel="Title"
+            name="./jcr:title"
+            xtype="textfield"/>
+        <max
+            jcr:primaryType="cq:Widget"
+            defaultValue="{Long}3"
+            fieldLabel="Maximum Number of Products"
+            name="./max"
+            xtype="numberfield"/>
+        <max-hint
+            jcr:primaryType="cq:Widget"
+            ignoreData="{Boolean}true"
+            name="./max@TypeHint"
+            value="Long"
+            xtype="hidden"/>
+        <cart-fitler
+            jcr:primaryType="cq:Widget"
+            boxLabel="Show only products which are not already in shopping cart"
+            name="./excludeProductsInCart"
+            type="checkbox"
+            xtype="selection"/>
+    </items>
+</jcr:root>

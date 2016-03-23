@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    width="{Long}800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs
+            jcr:primaryType="cq:TabPanel"
+            xtype="tabpanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tab1
+                        jcr:primaryType="cq:Widget"
+                        title="Product Compare Path"
+                        xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="ProductCompare Path"
+                                name="./comparePath"
+                                defaultValue="/content/havells/en/comparePage"
+                                xtype="pathfield"/>
+                        <tags
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Compare Category"
+                                fieldDescription="Product listing will be compared on basis of this category"
+                                name="./tag"
+                                xtype="tags">
+                            <namespaces jcr:primaryType="cq:WidgetCollection">
+                                <categorynm
+                                        jcr:primaryType="nt:unstructured"
+                                        maximum="1"
+                                        name="havells"/>
+                            </namespaces>
+                        </tags>
+                        <warningMessages
+                                jcr:primaryType="cq:Widget"
+                                title="Warning Messages"
+                                xtype="dialogfieldset">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <onlyOneProduct
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="One Product Message"
+                                        fieldDescription="Warning Message when only one product is selected."
+                                        name="./oneProduct"
+                                        xtype="textfield"/>
+                                <productAlreadyExists
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Already Exists Message"
+                                        fieldDescription="Warning Message when product already exists."
+                                        name="./existsProduct"
+                                        xtype="textfield"/>
+                                <threeProducts
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Three Products Message"
+                                        fieldDescription="Warning Message when already 3 products are selected."
+                                        name="./threeProducts"
+                                        xtype="textfield"/>
+                            </items>
+                        </warningMessages>
+                    </items>
+                </tab1>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

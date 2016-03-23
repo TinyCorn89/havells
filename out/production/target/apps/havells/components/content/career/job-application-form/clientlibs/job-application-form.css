@@ -1,0 +1,174 @@
+
+/*-------------------------------------------Job Detail And Application Form --------------------------------------------*/
+.currentOpporWrap {
+    width: 100%;
+    float: left;
+}
+.currentOpporWrap .designationWrap {
+    width: 96%;
+    float: left;
+    background: #f5f5f5;
+    padding: 20px 2%;
+}
+.currentOpporWrap .designationWrap h4 {
+    font-family: 'SegoeUI';
+    color: #585858;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0;
+    font-weight: normal;
+}
+.twoColRight h4 {
+    font-size: 20px;
+    color: #585858;
+    font-weight: normal;
+    font-family: 'SegoeUI';
+    margin-bottom: -3%;
+    margin-top: -1%;
+}
+.applyFormContainer {
+    width: 400px;
+    float: left;
+    margin: 0 0 35px 0;
+}
+.applyFormContainer label {
+    width: 182px;
+    float: left;
+    font-family: 'SegoeUI';
+    font-size: 14px;
+    color: #797979;
+    margin: 0 0 0 0;
+}
+.applyFormContainer .fieldInner {
+    width: 200px;
+    float: left;
+    background: #ffffff;
+    font-size: 14px;
+    color: #cccccc;
+    padding: 5px 0 5px 14px;
+    border: none;
+    margin: 0 0 10px 0;
+}
+.applyFormContainer .fieldInner option {
+    font-weight: normal;
+    display: block;
+    padding: 0px 2px 1px;
+    white-space: pre;
+    min-height: 1.2em;
+}
+.applyFormContainer .monthContainer {
+    width: 200px;
+    float: left;
+}
+.applyFormContainer .monthContainer .month {
+    width: 47%;
+    float: left;
+    background: #ffffff;
+    font-size: 14px;
+    color: #cccccc;
+    padding: 5px 0 5px 14px;
+    margin: 0 10px 10px 0;
+    border: none;
+}
+.noMarginRight {
+    margin-right: 0px !important;
+}
+.applyFormContainer .chosseFile {
+    width: 200px;
+    float: left;
+}
+.currentOpporWrap .applyNowWrapBottom {
+    width: 100%;
+    float: left;
+}
+.currentOpporWrap .applyNowWrapBottom .apply {
+    width: auto;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.currentOpporWrap .applyNowWrapBottom .apply a {
+    background: #f90100;
+    color: #fff;
+    padding: 5px 35px;
+    text-decoration: none;
+    display: block;
+}
+.currentOpporWrap .applyNowWrapBottom .apply input {
+    background: #f90100;
+    color: #fff;
+    padding: 5px 35px;
+    text-decoration: none;
+    display: block;
+}
+.currentOpporWrap .applyNowWrapBottom .disclaimer {
+    width: auto;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.currentOpporWrap .applyNowWrapBottom .disclaimer a {
+    background: #333333;
+    color: #fff;
+    padding: 5px 15px;
+    text-decoration: none;
+    display: block;
+}
+.validation-error {
+    border: red solid 1px !important;
+}
+.viweAllWrapper {
+    float: left;
+    width: 114px;
+    height: 145px;
+    line-height: 187px;
+    text-align: center;
+}
+.viweAllWrapper span {
+     width: 100%;
+     display: inline-block;
+ }
+.applyButton{
+    float:left;
+    width:100%;
+    margin:5px 0 0;
+    line-height:normal;
+    text-align:center;
+}
+.applyButton a{
+    text-transform:uppercase;
+    text-decoration:none;
+    font-size:16px;
+    color:#fff;
+    font-family: 'SegoeCondensed-Bold';
+    font-weight:normal;
+    display:block;
+    padding:2px 0;
+    background:#f90100;
+}
+
+
+.currentOpporWrap .applyNowWrap {
+    width: 100%;
+    float: left;
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.currentOpporWrap .applyNowWrap ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.currentOpporWrap .applyNowWrap ul li {
+    width: auto;
+    float: left;
+    background: #eaeaea;
+    padding: 5px 15px;
+    font-family: 'SegoeUI';
+    font-size: 14px;
+    color: #4c4c4c;
+    margin: 0 12px 0 0;
+    list-style: none;
+}

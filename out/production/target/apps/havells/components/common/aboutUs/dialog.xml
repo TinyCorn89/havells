@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="450"
+          title="About Us Information Dialog"
+          width="600"
+          xtype="dialog">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <BasicInformation
+                    jcr:primaryType="cq:Panel"
+                    title="Basic Information">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <name
+                            jcr:primaryType="nt:unstructured"
+                            emptyText="Enter Name"
+                            fieldDescription="Name"
+                            fieldLabel="Name"
+                            name="./name"
+                            xtype="textfield"/>
+                    <designation
+                            jcr:primaryType="nt:unstructured"
+                            emptyText="Designation"
+                            fieldDescription="Designation "
+                            fieldLabel="Designation"
+                            name="./designation"
+                            xtype="textfield"/>
+                    <profileLink
+                            jcr:primaryType="nt:unstructured"
+                            emptyText="ex. /content/geometrixx/en/toolbar/overview"
+                            fieldDescription="Profile Link."
+                            fieldLabel="Profile Link"
+                            name="./link"
+                            xtype="pathfield"/>
+                </items>
+            </BasicInformation>
+            <image
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_image.infinity.json"
+                    xtype="cqinclude"/>
+        </items>
+    </items>
+</jcr:root>
+

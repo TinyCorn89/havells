@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          title="dialog"
+          xtype="dialog">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <pincode
+                    jcr:primaryType="cq:Panel"
+                    title="Pincode">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <pincode
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Pincode Location"
+                            name="./pincodeLocation"
+                            xtype="pathfield"/>
+                </items>
+            </pincode>
+            <cod-available-messages
+                    jcr:primaryType="cq:Panel"
+                    title="Cod Available Messages">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <cod-available
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Message for Pin Not Available"
+                            height="100"
+                            name="./codAvailable"
+                            xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                        </rtePlugins>
+                    </cod-available>
+                    <cod-unavailable
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Message for cod Not Available"
+                            name="./codUnavailable"
+                            height="100"
+                            xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                        </rtePlugins>
+                    </cod-unavailable>
+                    <pincode-unavailable
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Message for Pin Not Available"
+                            height="100"
+                            name="./pinNotAvailable"
+                            xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                        </rtePlugins>
+                    </pincode-unavailable>
+                </items>
+            </cod-available-messages>
+        </items>
+    </items>
+</jcr:root>

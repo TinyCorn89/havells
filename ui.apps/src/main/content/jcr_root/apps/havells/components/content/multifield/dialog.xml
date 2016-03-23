@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="{Long}400"
+    title="Multifield"
+    width="{Long}800"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <panel
+                jcr:primaryType="cq:Panel"
+                title="Multifield">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <pages
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new page"
+                        fieldLabel="Pages"
+                        name="./pages"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multifiedpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <link
+                                    jcr:primaryType="cq:Widget"
+                                    dName="link"
+                                    fieldLabel="Link"
+                                    xtype="textfield"/>
+                                <path
+                                    jcr:primaryType="cq:Widget"
+                                    dName="path"
+                                    fieldLabel="Path"
+                                    xtype="pathfield"/>
+                                <socialicon
+                                    jcr:primaryType="cq:Widget"
+                                    defaultValue="none"
+                                    dName="icon"
+                                    fieldLabel="Icon"
+                                    type="select"
+                                    value="none"
+                                    xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <facebook
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Facebook"
+                                            value="facebook"/>
+                                        <twitter
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Twitter"
+                                            value="twitter"/>
+                                        <youtube
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Youtube"
+                                            value="youtube"/>
+                                        <pdf
+                                                jcr:primaryType="nt:unstructured"
+                                                text="PDF"
+                                                value="pdf"/>
+                                        <arrow
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Arrow"
+                                            value="arrow"/>
+                                        <none
+                                            jcr:primaryType="nt:unstructured"
+                                            text="None"
+                                            value="none"/>
+                                    </options>
+                                </socialicon>
+                                <iconsize
+                                    jcr:primaryType="cq:Widget"
+                                    dName="iconsize"
+                                    fieldLabel="Icon Size"
+                                    type="select"
+                                    value="none"
+                                    defaultValue="none"
+                                    xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <small
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Small"
+                                            value="small-icon"/>
+                                        <medium
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Medium"
+                                            value="med-icon"/>
+                                        <large
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Large"
+                                            value="large-icon"/>
+                                        <none
+                                            jcr:primaryType="nt:unstructured"
+                                            text="None"
+                                            value="none"/>
+                                    </options>
+                                </iconsize>
+                            </items>
+                        </fieldConfig>
+                    </pages>
+                    <display
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Display"
+                        name="./display"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <horizontal
+                                jcr:primaryType="nt:unstructured"
+                                text="Horizontal"
+                                value="H"/>
+                            <vertical
+                                jcr:primaryType="nt:unstructured"
+                                text="Vertical"
+                                value="V"/>
+                        </options>
+                    </display>
+                    <openNewWindow
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Open resulting page in a new browser window"
+                            fieldLabel="Open in New Window"
+                            name="./newWindow"
+                            type="checkbox"
+                            xtype="selection"/>
+                </items>
+            </panel>
+        </items>
+    </items>
+</jcr:root>

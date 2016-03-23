@@ -1,0 +1,16 @@
+<div data-sly-use.image="UploadImage" class='form_row'>
+    <div data-sly-test="${!image.hideTitle}" data-sly-unwrap>
+        ${image.title}
+    </div>
+    <div data-sly-test="${image.imgResource}">
+        <div id="editProfileImage">
+            <img src="${image.imagePath}" width="${image.width}" height="${image.height}"/>
+        </div>
+    </div>
+    <div data-sly-test="${!image.readOnly}">
+        <div class="form_rightcol">
+            <input id="${image.id}" class="${image.css}" name="${image.name}" type="file" size="28"/>
+        </div>
+    </div>
+    ${image.description}
+</div>

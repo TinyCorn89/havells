@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    name="./searchPath"
+    title="Search Facets"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <panel
+                jcr:primaryType="cq:Panel"
+                title="Links">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <commercePath
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Provide etc commerce path"
+                            rootPath="/etc/commerce/products/havells"
+                            name="./commercePath"
+                            xtype="pathfield"/>
+                    <filterType
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Choose the Filter Heading"
+                        name="./filterHeading"
+                        xtype="textfield"/>
+                    <perPageCounter
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="{Long}6"
+                            fieldLabel="No of items per page."
+                            name="./searchPerPageCounter"
+                            xtype="numberfield"/>
+                </items>
+            </panel>
+        </items>
+    </items>
+</jcr:root>

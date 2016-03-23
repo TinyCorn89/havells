@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    width="{Long}800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs
+            jcr:primaryType="cq:TabPanel"
+            xtype="tabpanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <basic
+                        jcr:primaryType="cq:Widget"
+                        title="Cart"
+                        xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <margin
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Check to show cart"
+                                fieldLabel="This is shopping cart check"
+                                name="./cartCheck"
+                                type="checkbox"
+                                xtype="selection"/>
+                    </items>
+                </basic>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

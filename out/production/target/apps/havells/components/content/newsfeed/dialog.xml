@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <attributes
+                jcr:primaryType="cq:Panel"
+                title="Config">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="News Feed Title"
+                        name="./feedTitle"
+                        xtype="textfield"/>
+                    <path
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="News Path"
+                        name="./path"
+                        xtype="pathfield"/>
+                    <feednumber
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        allowNegative="false"
+                        fieldDescription="Please enter positive number of feeds"
+                        fieldLabel="Total Fields"
+                        name="./totalFeeds"
+                        validateOnBlur="true"
+                        xtype="numberfield"/>
+                </items>
+            </attributes>
+        </items>
+    </items>
+</jcr:root>

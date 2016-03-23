@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        jcr:mixinTypes="[sling:VanityPath]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="AEM Products"
+        sling:resourceType="granite/ui/components/foundation/page"
+        sling:vanityOrder="{Long}100"
+        sling:vanityPath="/aem/products">
+        <body
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/page/body">
+            <content
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                    <items jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/navigation">
+                            <items jcr:primaryType="nt:unstructured">
+                                <create
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/endor/actionbar/pulldownlink"
+                                    icon="icon-add"
+                                    text="Create"
+                                    title="Create">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <colorvariation
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:orderBefore="createfolder"
+                                            sling:resourceType="granite/ui/components/foundation/hyperlink"
+                                            href="/apps/commerce/gui/content/products/createcolorvariationwizard.html${requestPathInfo.suffix}"
+                                            text="Create Color Variation">
+                                            <rendercondition
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/renderconditions/privilege"
+                                                path="${requestPathInfo.suffix}"
+                                                privileges="jcr:addChildNodes"/>
+                                        </colorvariation>
+                                    </items>
+                                </create>
+                            </items>
+                        </default>
+                    </items>
+                </header>
+            </content>
+        </body>
+    </jcr:content>
+    <createcolorvariationwizard/>
+</jcr:root>

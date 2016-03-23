@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    width="{Long}800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs
+            jcr:primaryType="cq:TabPanel"
+            xtype="tabpanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+		<tab1
+			jcr:primaryType="cq:Widget"
+			title="Product Compare Tags"
+			xtype="panel">
+			<items jcr:primaryType="cq:WidgetCollection">
+				<generalHeading
+					jcr:primaryType="cq:Widget"
+					fieldLabel="Heading"
+					name="./generalHeading"
+					xtype="textfield"/>
+				<path
+					jcr:primaryType="cq:Widget"
+					fieldLabel="Product Compare Tags"
+					name="./compareTag"
+					xtype="multifield">
+					<fieldConfig
+						jcr:primaryType="cq:Widget"
+						xtype="pathfield"
+						rootPath="/etc/tags/havells/product_tech_specification">
+					</fieldConfig>
+				</path>
+			</items>
+		</tab1>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Teaser"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <location
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Custom location identifier used to match teaser pages"
+            fieldLabel="Location Name"
+            name="./location"
+            xtype="textfield"/>
+        <campaignpath
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Reference an explicit campaign without experiences or location matching (optional)"
+            fieldLabel="Campaign Path"
+            name="./campaignpath"
+            rootPath="/content/campaigns"
+            rootTitle="Campaigns"
+            xtype="pathfield"/>
+        <strategypath
+            jcr:primaryType="cq:Widget"
+            allowBlank="false"
+            fieldDescription="Determines how a particular teaser page is chosen"
+            fieldLabel="Strategy"
+            name="./strategyPath"
+            options="/libs/cq/personalization/clientlib/kernel/source/strategies/list.json"
+            type="select"
+            xtype="selection"/>
+    </items>
+</jcr:root>

@@ -1,0 +1,29 @@
+.testominalWrapper .testimonialsDiv ul li .testimonialsText .ratingWrapper .rating span .fa-star.star-selected{
+    color: #000;
+}
+.testominalWrapper .testimonialsDiv ul li .comment .testimonialsImage img{
+   height: 84px;
+}
+.writeTestimonialWrapper span .fa-star {
+    color: #d7d7d7;
+}
+.writeTestimonialWrapper span .fa-star:hover {
+    color: #000;
+}
+.writeTestimonialWrapper span .fa-star.star-selected {
+    color: #000;
+}
+.writeTestimonialWrapper .anonymous_hidden{
+    display: none;
+}
+.featuresLeft .testominalWrapper .testimonialsDiv{
+    overflow: hidden;
+    outline: none;
+}
+
+.featuresLeft .testominalWrapper .testimonialsDiv ul li .testimonialsImage img{
+    width: 100%;
+}
+.testimonialsDiv .msg {
+    color: red;
+}

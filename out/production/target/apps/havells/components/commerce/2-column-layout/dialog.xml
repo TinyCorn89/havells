@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="&#xa;function(tab,noSwitch){var tabs=['props','children','descendants','static','search','querybuilder','tags','custom'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="List"
+    width="{Long}1000"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <list
+            jcr:primaryType="cq:Widget"
+            title="Column Layout"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue=""
+                    fieldLabel="Build list using"
+                    name="./columnlayout"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <_x0036_6-33
+                            jcr:primaryType="nt:unstructured"
+                            text="2 Columns : 66/33"
+                            value="66-33"/>
+                        <_x0035_0-50
+                            jcr:primaryType="nt:unstructured"
+                            text="2 Columns : 50/50"
+                            value="50-50"/>
+                    </options>
+                </listFrom>
+            </items>
+        </list>
+    </items>
+</jcr:root>

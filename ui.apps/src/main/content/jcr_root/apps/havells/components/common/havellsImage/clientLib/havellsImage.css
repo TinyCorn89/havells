@@ -1,0 +1,22 @@
+.chairmanPic {
+    width: auto;
+    float: left;
+    position: relative;
+}
+
+.chairmanPic .charimanProfileTxt {
+    right: 0;
+    position: absolute;
+    bottom: 35px;
+    background: #fff;
+    font-size: 17px;
+    padding: 5px 0 5px 15px;
+    font-family: 'SegoeUI';
+}
+
+.chairmanPic img{
+    width:100%
+}
+.chairmanPic .charimanProfileTxt p {
+    margin-top: -4px;
+}

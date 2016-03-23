@@ -1,0 +1,9 @@
+.border-line {
+    border-top: 5px solid #e5e5e5;
+    list-style: none;
+    width: auto;
+    margin-left: 10px;
+}
+.categoryListingWrapper .columnWrapper .cardRow .border-line {
+    width: 192px !important;
+}

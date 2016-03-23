@@ -1,0 +1,106 @@
+.refineWrapper{
+    float:left;
+    width:100%;
+    margin:10px 0 0;
+}
+.refineHeading{
+    float:left;
+    width:100%;
+    color:#fff;
+    font-size:13px;
+    font-family: 'SegoeUI';
+    text-transform:uppercase;
+    position:relative;
+    padding:7px 10px;
+    background:#ee3b3b;
+}
+.refineHeading span::before{
+    content:"+";
+    font-size:18px;
+    color:#fff;
+    position:absolute;
+    right:5px;
+    top:4px;
+    height:25px;
+    width:20px;
+    text-align:center;
+    line-height:20px;
+    cursor:pointer;
+}
+.refineHeading.active span::before{
+    content:"-";
+    top:3px;
+}
+.refineDiv{
+    float:left;
+    width:100%;
+}
+.priceHeading{
+    float:left;
+    width:100%;
+    color:#000;
+    font-size:13px;
+    font-family: 'SegoeUI';
+    text-transform:uppercase;
+    position:relative;
+    padding:7px 10px;
+    border-bottom:1px solid #e8e8e8;
+}
+.priceWrapperDiv{
+    float:left;
+    width:100%;
+    border-right:1px solid #e8e8e8;
+    border-left:1px solid #e8e8e8;
+}
+.priceHeading span::before{
+    content:"+";
+    font-size:18px;
+    color:#000;
+    position:absolute;
+    right:5px;
+    top:4px;
+    height:25px;
+    width:20px;
+    text-align:center;
+    line-height:20px;
+    cursor:pointer;
+}
+.priceHeading.active span::before{
+    content:"-";
+    top:3px;
+}
+.priceContent{
+    float:left;
+    width:100%;
+}
+.priceContent ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.priceContent ul li{
+    float:left;
+    width:100%;
+    padding: 7px 10px;
+    border-bottom:1px solid #e8e8e8;
+    margin-top: 0px !important;
+}
+.priceContent ul li input[type="checkbox"]{
+    float:left;
+    width:auto;
+    margin:4px 18px 0 0;
+}
+.priceContent ul li label{
+    float:left;
+    width:100%;
+}
+.priceContent ul li span{
+    color:#bab6b6;
+    font-size:11px;
+    font-family: 'SegoeUI';
+    text-transform:uppercase;
+}
+.priceContent ul li input[type="checkbox"]:checked ~ *{
+    color:#ee3b3b;
+    font-weight:bold;
+}

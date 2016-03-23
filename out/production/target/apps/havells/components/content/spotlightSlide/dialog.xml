@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="550"
+          title="Spotlight Slide Configuration"
+          width="600"
+          xtype="dialog">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <BasicInformation
+                    jcr:primaryType="cq:Panel"
+                    title="Basic Information">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            emptyText="Enter title"
+                            fieldDescription="Enter Title"
+                            fieldLabel="Heading"
+                            name="./heading"
+                            xtype="richtext"/>
+                    <description
+                            jcr:primaryType="nt:unstructured"
+                            fieldDescription="Enter the Description"
+                            fieldLabel="Description"
+                            inputType="text"
+                            name="./description"
+                            xtype="richtext"/>
+                </items>
+            </BasicInformation>
+            <colorInformation
+                    jcr:primaryType="cq:Panel"
+                    title="Other Information">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <noOfButtons
+                            jcr:primaryType="nt:unstructured"
+                            emptyText=""
+                            fieldDescription="No. Of Buttons"
+                            fieldLabel="No. Of Buttons"
+                            name="./noOfButtons"
+                            xtype="textfield"/>
+                    <noLeftRibbon
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="No left ribbon color"
+                            fieldDescription="If checked left ribbon will be transparent."
+                            name="./noLeftRibbon"
+                            type="checkbox"
+                            xtype="selection">
+                        <noLeftRibbonTypeHint
+                                jcr:primaryType="cq:Widget"
+                                ignoreData="{Boolean}true"
+                                name="./noLeftRibbon@TypeHint"
+                                value="Boolean"
+                                xtype="hidden"/>
+                        <listeners
+                                jcr:primaryType="nt:unstructured"
+                                selectionchanged="function(comp, val, isChecked) { &#xa;&#x9;&#x9;var dialog=comp.findParentByType(&quot;dialog&quot;);&#xa;&#x9;        var leftRibbon = dialog.getField(&quot;./color&quot;); &#xa;&#x9;&#x9;var leftRibbonCustom=dialog.getField(&quot;./customColor&quot;);&#xa;                isChecked ? hideBoth(leftRibbon,leftRibbonCustom) : showBoth(leftRibbon,leftRibbonCustom); &#xa;&#xa;function hideBoth(leftRibbon,leftRibbonCustom){&#xa;leftRibbon.hide();&#xa;leftRibbonCustom.hide();&#xa;}&#xa;function showBoth(leftRibbon,leftRibbonCustom){&#xa;leftRibbon.show();&#xa;leftRibbonCustom.hide();&#xa;}&#xa;}"/>
+                    </noLeftRibbon>
+                    <color
+                            jcr:primaryType="nt:unstructured"
+                            fieldDescription="Select Color for left ribbon."
+                            fieldLabel="Left Ribbon Color"
+                            name="./color"
+                            xtype="colorfield"/>
+                    <customColor
+                            jcr:primaryType="nt:unstructured"
+                            fieldDescription="Select custom color for left ribbon. If provided then it will override left ribbon color value."
+                            fieldLabel="Left Ribbon Custom Color"
+                            name="./customColor"
+                            xtype="textfield"/>
+                    <noRightRibbon
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="No right ribbon color"
+                            fieldDescription="If checked right ribbon will be transparent."
+                            name="./noRightRibbon"
+                            type="checkbox"
+                            xtype="selection">
+                        <noRightRibbonTypeHint
+                                jcr:primaryType="cq:Widget"
+                                ignoreData="{Boolean}true"
+                                name="./noRightRibbon@TypeHint"
+                                value="Boolean"
+                                xtype="hidden"/>
+                        <listeners
+                                jcr:primaryType="nt:unstructured"
+                                selectionchanged="function(comp, val, isChecked) { &#xa;&#x9;&#x9;var dialog=comp.findParentByType(&quot;dialog&quot;);&#xa;&#x9;        var rightRibbon = dialog.getField(&quot;./rightRibbonColor&quot;); &#xa;&#x9;&#x9;var rightRibbonCustom=dialog.getField(&quot;./rightRibbonCustomColor&quot;);&#xa;                isChecked ? hideBoth(rightRibbon,rightRibbonCustom) : showBoth(rightRibbon,rightRibbonCustom); &#xa;&#xa;function hideBoth(rightRibbon,rightRibbonCustom){&#xa;rightRibbon.hide();&#xa;rightRibbonCustom.hide();&#xa;}&#xa;function showBoth(rightRibbon,rightRibbonCustom){&#xa;rightRibbon.show();&#xa;rightRibbonCustom.show();&#xa;}&#xa;}"/>
+                    </noRightRibbon>
+                    <rightRibbonColor
+                            jcr:primaryType="nt:unstructured"
+                            fieldDescription="Select Color for right ribbon."
+                            fieldLabel="Right Ribbon Color"
+                            name="./rightRibbonColor"
+                            xtype="colorfield"/>
+                    <rightRibbonCustomColor
+                            jcr:primaryType="nt:unstructured"
+                            fieldDescription="Select custom color for right ribbon. If provided then it will override right ribbon color value."
+                            fieldLabel="Right Ribbon Custom Color"
+                            name="./rightRibbonCustomColor"
+                            xtype="textfield"/>
+                </items>
+            </colorInformation>
+            <backgroundImage
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_image.infinity.json"
+                    xtype="cqinclude"/>
+        </items>
+    </items>
+</jcr:root>

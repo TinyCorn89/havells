@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="550"
+          title="Product Component Dialog"
+          width="600"
+          xtype="dialog">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <BasicInformation
+                    jcr:primaryType="cq:Panel"
+                    title="Basic Information">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            emptyText="Enter title"
+                            fieldDescription="Enter Title"
+                            fieldLabel="Title"
+                            name="./title"
+                            validateOnBlur="true"
+                            xtype="textfield"/>
+                    <subTitle
+                            jcr:primaryType="nt:unstructured"
+                            emptyText="Sub Title"
+                            fieldDescription="Enter Sub Title"
+                            fieldLabel="Sub Title"
+                            name="./subTitle"
+                            validateOnBlur="true"
+                            xtype="textfield"/>
+                    <description
+                            jcr:primaryType="nt:unstructured"
+                            fieldDescription="Enter the Description"
+                            fieldLabel="Description"
+                            inputType="text"
+                            name="./description"
+                            validateOnBlur="true"
+                            xtype="richtext"/>
+                    <noOfButtons
+                            jcr:primaryType="nt:unstructured"
+                            emptyText=""
+                            fieldDescription="No. Of Buttons"
+                            fieldLabel="No. Of Buttons"
+                            name="./noOfButtons"
+                            xtype="textfield"/>
+                </items>
+            </BasicInformation>
+            <backgroundImage
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_image.infinity.json"
+                    xtype="cqinclude"/>
+            <tab3
+                    jcr:primaryType="cq:Panel"
+                    title="Icon Image">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <image
+                            jcr:primaryType="cq:Widget"
+                            ddGroups="[media]"
+                            fileNameParameter="./iconFileName"
+                            fileReferenceParameter="./iconFileReference"
+                            height="{Long}300"
+                            name="./iconFile"
+                            requestSuffix="/image.img.png"
+                            title="Icon Image"
+                            width="{Long}600"
+                            xtype="smartimage"/>
+                    <resType
+                            jcr:primaryType="cq:Widget"
+                            ignoreData="{Boolean}true"
+                            name="./tabletImage/sling:resourceType"
+                            value="foundation/components/image"
+                            xtype="hidden"/>
+                </items>
+            </tab3>
+        </items>
+    </items>
+</jcr:root>

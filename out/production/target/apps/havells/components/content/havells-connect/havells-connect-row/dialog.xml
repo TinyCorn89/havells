@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          title="Havells-Connect-Row"
+          xtype="dialog">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Image
+                    jcr:primaryType="cq:Widget"
+                    ddGroups="[media]"
+                    fileNameParameter="./fileName"
+                    fileReferenceParameter="./fileReference"
+                    allowUpload="{Boolean}false"
+                    name="./file"
+                    title="Image"
+                    xtype="html5smartimage"/>
+            <Config
+                    jcr:primaryType="cq:Widget"
+                    title="Configuration"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                            jcr:primaryType="cq:Widget"
+                            name="./title"
+                            fieldLabel="Title"
+                            height="50"
+                            xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                        </rtePlugins>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <blockHandling
+                                    jcr:primaryType="nt:unstructured"
+                                    removeSingleParagraphContainer="{Boolean}true"/>
+                        </htmlRules>
+                    </title>
+                    <desc
+                            jcr:primaryType="cq:Widget"
+                            name="./description"
+                            height="100"
+                            fieldLabel="Description"
+                            xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                        </rtePlugins>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <blockHandling
+                                    jcr:primaryType="nt:unstructured"
+                                    removeSingleParagraphContainer="{Boolean}true"/>
+                        </htmlRules>
+                    </desc>
+                    <border
+                            jcr:primaryType="cq:Widget"
+                            name="./includeBorder"
+                            fieldLabel="Include Border?"
+                            inputValue="false"
+                            type="checkbox"
+                            xtype="selection"/>
+                    <extracss
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="icn1"
+                            fieldDescription="Extra css for image"
+                            fieldLabel="CSS class"
+                            name="./cssicon"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Left
+                                    jcr:primaryType="nt:unstructured"
+                                    text="icn1"
+                                    value="icn1"/>
+                            <Center
+                                    jcr:primaryType="nt:unstructured"
+                                    text="icn2"
+                                    value="icn2"/>
+                            <Right
+                                    jcr:primaryType="nt:unstructured"
+                                    text="icn3"
+                                    value="icn3"/>
+                        </options>
+                    </extracss>
+                </items>
+            </Config>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <first
+            jcr:primaryType="nt:unstructured"
+            title="Title and Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./formtitle"
+                    xtype="textfield"/>
+                <error
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the Error Message"
+                        name="./error"
+                        xtype="textfield"/>
+                <user-exist
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="User Exist Error Message"
+                        name="./userExistErrorMessage"
+                        xtype="textfield"/>
+            </items>
+        </first>
+    </items>
+</jcr:root>

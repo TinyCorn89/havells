@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    width="{Long}800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs
+            jcr:primaryType="cq:TabPanel"
+            xtype="tabpanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tab1
+                        jcr:primaryType="cq:Widget"
+                        title="Product Compare Path"
+                        xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <perPageCounter
+                                jcr:primaryType="cq:Widget"
+                                defaultValue="{Long}6"
+                                fieldLabel="No of items per page."
+                                name="./perPageCounter"
+                                xtype="numberfield"/>
+                    </items>
+                </tab1>
+                <pagination
+                        jcr:primaryType="cq:Widget"
+                        title="Pagination Show"
+                        xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <pagination-at-top
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Pagination at Top"
+                                fieldDescription="Check if you want to show pagination at the top"
+                                name="./paginationAtTop"
+                                defaultValue="{Boolean}true"
+                                inputValue="{Boolean}false"
+                                xtype="selection"
+                                type="checkbox"/>
+
+                        <pagination-align
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Pagination alignment"
+                                fieldDescription="Check where you want to align pagination"
+                                defaultValue="left"
+                                name="./paginationAlign"
+                                type="radiogroup"
+                                xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <pagination-left
+                                        jcr:primaryType="cq:Widget"
+                                        text="left"
+                                        value="left"/>
+                                <pagination-center
+                                        jcr:primaryType="cq:Widget"
+                                        text="center"
+                                        value="center"/>
+                                <pagination-right
+                                        jcr:primaryType="cq:Widget"
+                                        text="right"
+                                        value="right"/>
+                            </options>
+                        </pagination-align>
+                    </items>
+                </pagination>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

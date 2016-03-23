@@ -1,0 +1,37 @@
+
+div .cta .buttonGlbl.darkred {
+    background-color: #cc0000;}
+
+div .cta .buttonGlbl.lightred {
+    background-color: #ee3b3b;}
+
+div .cta .buttonGlbl.lightred a {
+    background: none;}
+
+div .cta .buttonGlbl.grey {
+    background-color: #808080; }
+
+div .cta .buttonGlbl.lightGrey {
+    background-color: #d3d3d3; }
+
+div .cta .buttonGlbl.whitegreytext a {
+    color:#808080;
+    background: #ffffff;
+    border: white solid 1px;
+}
+
+div .cta .buttonGlbl.whiteredtext a {
+    color:#ff0000;
+    background: #ffffff;
+    border: white solid 1px;
+}
+div .cta .buttonGlbl.text-bold a {
+    font-weight: bold;
+}
+.buttonGlbl.noColorChange a:after {
+    background: none;
+}
+div .cta .buttonGlbl .arrow-right {
+    margin-left: 10px; }
+
+

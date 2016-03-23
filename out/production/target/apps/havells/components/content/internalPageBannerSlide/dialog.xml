@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="600"
+    title="Internal Page Banner Slide"
+    width="600"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <BasicInformation
+                jcr:primaryType="cq:Panel"
+                title="Basic Information">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        emptyText="Enter title"
+                        fieldDescription="Enter Title"
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textarea"/>
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Enter the Description"
+                        fieldLabel="Description"
+                        inputType="text"
+                        name="./description"
+                        xtype="richtext"/>
+                    <noOfButtons
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="No. Of Buttons"
+                        fieldLabel="No. Of Buttons"
+                        name="./noOfButtons"
+                        xtype="textfield"/>
+                    <linkUrl
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="URL for image click"
+                    fieldLabel="Image Link URL"
+                    name="./linkUrl"
+                    xtype="pathfield"/>
+                </items>
+            </BasicInformation>
+            <backgroundImage
+                jcr:primaryType="cq:Widget"
+                path="/libs/foundation/components/page/tab_image.infinity.json"
+                xtype="cqinclude"/>
+            <colorSettings
+                jcr:primaryType="cq:Panel"
+                title="Color Settings">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <color
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Select Color"
+                        fieldLabel="Title Color"
+                        name="./titleColor"
+                        xtype="colorfield"/>
+                    <customColor
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Custom color code. Doesn't add # at the starting."
+                        fieldLabel="Title Custom Color"
+                        name="./titleCustomColor"
+                        xtype="textfield"/>
+                    <descColor
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Select Color"
+                        fieldLabel="Description Color"
+                        name="./descColor"
+                        xtype="colorfield"/>
+                    <descCustomColor
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Custom color code. Doesn't add # at the starting."
+                        fieldLabel="Description Custom Color"
+                        name="./descCustomColor"
+                        xtype="textfield"/>
+                </items>
+            </colorSettings>
+        </items>
+    </items>
+</jcr:root>

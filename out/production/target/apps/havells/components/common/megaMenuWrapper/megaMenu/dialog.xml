@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="500"
+          title="Mega Menu"
+          width="600"
+          xtype="dialog">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tabs
+                    jcr:primaryType="cq:Panel"
+                    border="false"
+                    height="400"
+                    title="Mega Menu Details"
+                    width="400">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <subMenuUrl
+                            jcr:primaryType="nt:unstructured"
+                            emptyText="Ex.  /content/geometrixx/en/toolbar"
+                            fieldDescription="Enter the URL whose child behaves as a Top Nav. Sub Menus"
+                            fieldLabel="Top Nav. Menu Path"
+                            inputType="text"
+                            msgTarget="under"
+                            name="./parentUrl"
+                            rootPath="/content"
+                            xtype="pathfield"/>
+                    <depth
+                            jcr:primaryType="nt:unstructured"
+                            emptyText="4"
+                            fieldDescription="Depth Level"
+                            fieldLabel="Depth Level"
+                            name="./depth"
+                            xtype="numberfield"/>
+                    <items
+                            jcr:primaryType="nt:unstructured"
+                            fieldLabel="Display Left Column"
+                            name="./leftCol"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <dots
+                                    jcr:primaryType="nt:unstructured"
+                                    text="No"
+                                    value="N"/>
+                            <arrows
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Yes"
+                                    value="Y"/>
+                        </options>
+                    </items>
+                </items>
+            </tabs>
+        </items>
+    </items>
+</jcr:root>

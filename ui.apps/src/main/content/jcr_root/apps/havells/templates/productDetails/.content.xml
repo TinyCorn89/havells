@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Template"
+    jcr:description="Havells generic product detail page template."
+    jcr:title="Havells Product details Page Template "
+    allowedPaths="[/content/havells/[^/]+(/.*)?,/content/catalogs/havells/templatePages(/.*)?]"
+    ranking="{Long}100">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="havells/components/page/productDetails">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <product
+                cq:commerceType="product"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="havells/components/commerce/product"/>
+        </par>
+        <leftPar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <variantList
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="havells/components/commerce/productDetails/variantsList">
+            </variantList>
+            <productfeatures_1 jcr:primaryType="nt:unstructured"
+                               featureType="detailFeatures"
+                               heading="Detail Feature"
+                               sling:resourceType="havells/components/commerce/productDetails/productFeatures"/>
+            <productfeatures_2 jcr:primaryType="nt:unstructured"
+                               featureType="techspecs"
+                               heading="Technical Specification"
+                               sling:resourceType="havells/components/commerce/productDetails/productFeatures"/>
+            <productfeatures_3 jcr:primaryType="nt:unstructured"
+                               featureType="techImages"
+                               heading="Technical Drawing"
+                               sling:resourceType="havells/components/commerce/productDetails/productFeatures"/>
+            <productfeatures_4 jcr:primaryType="nt:unstructured"
+                               featureType="accessories"
+                               heading="Accessories"
+                               sling:resourceType="havells/components/commerce/productDetails/productFeatures"/>
+            <productfeatures_5 jcr:primaryType="nt:unstructured"
+                               featureType="faq"
+                               heading="FAQ"
+                               sling:resourceType="havells/components/commerce/productDetails/productFeatures"/>
+            <testMonials
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="havells/components/commerce/productDetails/productTestiMonials"/>
+			<productVideos
+				jcr:primaryType="nt:unstructured"
+				sling:resourceType="havells/components/commerce/productDetails/productVideosWrapper"/>
+			<productLike
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="havells/components/commerce/productDetails/productLikeWrapper"/>
+            <recentViewed
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="havells/components/commerce/productDetails/recentViewedWrapper"/>
+        </leftPar>
+        <rightPar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <locator
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="havells/components/commerce/productDetails/dealerLocator"/>
+        </rightPar>
+    </jcr:content>
+</jcr:root>

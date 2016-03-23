@@ -1,0 +1,127 @@
+.twoColRight .mediaVideoWrapper ul li a img{
+	width:100%;
+	} 
+.twoColRight .mediaVideoWrapper ul li span{
+	display:block;
+	height:auto;
+	}
+.twoColRight .mediaVideoWrapper select{
+	padding:5px;
+	color:#ee3b3b;
+	text-transform:uppercase;
+	border:1px solid #999;
+	font-weight:bold;
+	}
+/*.subNavImage .ironSlider{
+	float: left;
+    height: 70px;
+    margin: 0 10px 0 0;
+    position: relative;
+    width: 55px;
+	}
+.subNavImageWrapper .subNavImage .ironSlider .navBottomArrow{
+	display:none;
+	position:absolute;
+	bottom:-15px;
+	left:20%;
+	color:#e6e6e6;
+	z-index:1;
+	font-size:20px;
+	}
+.subNavImageWrapper .subNavImage .ironSlider a {
+	display:block;
+	text-decoration:none;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+.subNavImageWrapper .subNavImage .ironSlider a span {
+	display:none;
+	color:#f90100;
+	font-size:11px;
+	margin:5px 0 0 0;
+	font-weight:normal;
+}
+.subNavImageWrapper .subNavImage .ironSlider a:hover span{
+	display:inline-block;
+}
+.subNavImageWrapper .subNavImage .ironSlider a:hover .navBottomArrow{
+	display:block;
+	}
+.subNavImage .slick-prev{
+	background: url(/etc/clientlibs/havells/image/next-prev-arrow.png) left top no-repeat;
+    height: 16px;
+    top: 43%;
+    width: 11px;
+	}
+.subNavImage .slick-next{
+	background: url(/etc/clientlibs/havells/image/next-prev-arrow.png) right top no-repeat;
+    height: 16px;
+    top: 43%;
+    width: 11px;
+	right:-10px;
+	}*/
+.testimonialSelect select{
+	float:right;
+	width:150px;
+	padding:5px;
+	color:#ee3b3b;
+	border:1px solid #999;
+	margin-right:30px;
+	margin-top:-29px;
+	font-weight:bold;
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+	}
+
+
+
+
+
+
+
+
+
+ @media only screen and (min-width: 768px) {}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
+@font-face {
+ font-family: 'SegoeUI';
+ src: url('fonts/segoeui0.eot');
+ src: url('fonts/segoeui0.eot?#iefix') format('embedded-opentype'), url('fonts/segoeui0.woff') format('woff'), url('fonts/segoeui0.ttf') format('truetype'), url('fonts/segoeui0.svg#segoeui0') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'SegoeCondensed-Bold';
+ src: url('fonts/segoecbd.eot');
+ src: url('fonts/segoecbd.eot?#iefix') format('embedded-opentype'), url('fonts/segoecbd.woff') format('woff'), url('fonts/segoecbd.ttf') format('truetype'), url('fonts/segoecbd.svg#segoecbd') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+.noDisplay {
+	display:none;
+}
+.noMarginRight {
+	margin-right:0px !important;
+}
+.noBorderRight {
+	border-right:0px !important;
+}
+.noBorderBottom {
+	border-bottom:0px !important;
+}
+.noBorder {
+	border:0px !important;
+}

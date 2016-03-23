@@ -1,0 +1,4 @@
+#base=./css
+fancybox-buttons.css
+fancybox-thumbs.css
+fancybox.css

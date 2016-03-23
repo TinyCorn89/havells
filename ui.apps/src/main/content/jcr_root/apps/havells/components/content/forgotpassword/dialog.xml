@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Forgot Password"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <text
+            jcr:primaryType="cq:Widget"
+            defaultValue="Please enter your registered email id:"
+            fieldLabel="Label"
+            name="./label"
+            xtype="textfield"/>
+        <action
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Path where user redirect to after form submission."
+            fieldLabel="Thankyou Page"
+            name="./action"
+            xtype="pathfield"/>
+        <subject
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Subject for Mail"
+                name="./subject"
+                xtype="textfield"/>
+        <mailSent
+                jcr:primaryType="cq:Widget"
+                fieldDescription="Message you want to show when mail has being sent."
+                fieldLabel="Mail sent Message"
+                name="./mailSent"
+                xtype="textfield"/>
+    </items>
+</jcr:root>

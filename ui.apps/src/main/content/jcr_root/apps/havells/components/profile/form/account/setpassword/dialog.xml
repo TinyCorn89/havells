@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <first
+            jcr:primaryType="nt:unstructured"
+            title="Title and Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <thankyou
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Thankyou Page"
+                    description="This Page will be shown when the URL is directly opened."
+                    name="./redirectToThank"
+                    xtype="pathfield"/>
+                <to-404
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Error Page"
+                        description="This Page will be shown when the any error comes."
+                        name="./redirectTo404"
+                        xtype="pathfield"/>
+                <access-denied
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Access Denied Page"
+                        description="This Page will be shown when the user does not have permission to reset password."
+                        name="./redirectToAccessDenied"
+                        xtype="pathfield"/>
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./jcr:title"
+                    xtype="textfield"/>
+                <hideTitle
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Hide Title"
+                    inputValue="true"
+                    name="./hideTitle"
+                    type="checkbox"
+                    xtype="selection"/>
+                <confirm
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Confirmation Title"
+                    name="./confirmationTitle"
+                    xtype="textfield"/>
+                <hideConfirmTitle
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Hide Confirmation Title"
+                    inputValue="true"
+                    name="./hideConfirmTitle"
+                    type="checkbox"
+                    xtype="selection"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Descriptive text. {0} is replaced with the name of the user."
+                    fieldLabel="Description"
+                    name="./jcr:description"
+                    xtype="textfield"/>
+                <tokenNotExistMessage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Token not found message"
+                        fieldDescription="Any message when the token doesnot exist."
+                        name="./tokenNotExistMessage"
+                        xtype="textfield"/>
+                <width
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Width"
+                        fieldDescription="Width of the input box"
+                        name="./width"
+                        xtype="textfield"/>
+                <minlength
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Minimum length"
+                        name="./minlength"
+                        xtype="textfield"/>
+                <maxlength
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Maximum length"
+                        name="./maxlength"
+                        xtype="textfield"/>
+                <showLabelInside
+                    jcr:primaryType="cq:Widget"
+                    boxLabel="Show label inside form field"
+                    fieldLabel="Show Label Inside"
+                    name="./showLabelInside"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </first>
+        <constraints
+            jcr:primaryType="nt:unstructured"
+            title="Constraints"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <required
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Required"
+                    inputValue="true"
+                    name="./required"
+                    type="checkbox"
+                    xtype="selection"/>
+                <requiredMessage
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Required Message"
+                    name="./requiredMessage"
+                    xtype="textarea"/>
+                <constraintMessage
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Constraint Message"
+                    name="./constraintMessage"
+                    xtype="textarea"/>
+            </items>
+        </constraints>
+        <size
+            jcr:primaryType="nt:unstructured"
+            title="Size"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <multiLine
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Size"
+                    heightParameter="./rows"
+                    heightSuffix="rows"
+                    widthParameter="./cols"
+                    widthSuffix="cols"
+                    xtype="sizefield"/>
+            </items>
+        </size>
+    </items>
+</jcr:root>

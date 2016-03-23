@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Locate a dealer"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                    jcr:primaryType="cq:Widget"
+                    title="Locate Dealer Form"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Heading on the Form"
+                            name="./locatorHeading"
+                            defaultValue="Locate a dealer"
+                            xtype="textfield"/>
+                    <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="dealerForm PagePath"
+                            name="./dealerFormPath"
+                            xtype="pathfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

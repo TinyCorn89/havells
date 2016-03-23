@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Login"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <first
+                    jcr:primaryType="nt:unstructured"
+                    title="Log In"
+                    xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <usernameLabel
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="Login Id"
+                            fieldLabel="Login Placeholder Label"
+                            name="./usernameLabel"
+                            xtype="textfield"/>
+                        <loginLabel
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="Sign in"
+                            fieldLabel="Sign  In Button Label"
+                            name="./loginLabel"
+                            xtype="textfield"/>
+                        <signupLabel
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="Sign Up"
+                            fieldLabel="Signup Label"
+                            name="./signUpLabel"
+                            xtype="textfield"/>
+                        <forgotPasswodLabel
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Forgot Password Label"
+                            name="./forgotPasswordLabel"
+                            xtype="textfield"/>
+                        <invalidLoginMessage
+                                jcr:primaryType="cq:Widget"
+                                defaultValue="Login/Password is wrong"
+                                fieldLabel="Invalid Login Label"
+                                name="./invalidLoginMessage"
+                                xtype="textfield"/>
+                    </items>
+                </first>
+                <second
+                    jcr:primaryType="nt:unstructured"
+                    title="Paths"
+                    xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <signup
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Signup Url"
+                            name="./signUpUrl"
+                            xtype="pathfield"/>
+                        <forgotPasswod
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="ForgotPassword URL"
+                            name="./forgotPasswordUrl"
+                            xtype="pathfield"/>
+                        <myprofile
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="My Profile Path"
+                            name="./myprofile"
+                            xtype="pathfield"/>
+                    </items>
+                </second>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

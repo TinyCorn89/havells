@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <queryMsg
+                            jcr:primaryType="cq:Widget"
+                            defaultValue=" Have a query? Please submit you details and someone from our team will contact you shortly."
+                            fieldLabel="Text for Query Message"
+                            name="./queryText"
+                            xtype="richtext"/>
+                    <buttonText
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="QUICK ENQUIRY FORM"
+                            fieldLabel="Text for Quick Enquiry Button"
+                            name="./QuickButtonText"
+                            xtype="textfield"/>
+                    <thankuMsg
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Thankyou for your query. We will revert to you soon!!"
+                        fieldLabel="Text for Thankyou Message"
+                        name="./thankyouText"
+                        xtype="richtext"/>
+                    <userError
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="User already exists."
+                            fieldLabel="Text for User Error"
+                            name="./userError"
+                            xtype="textfield"/>
+                    <serverError
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="Sorry some error occured."
+                            fieldLabel="Text for Server Error"
+                            name="./serverError"
+                            xtype="textfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Print Coverage"
+    width="{Long}600"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <conf
+                jcr:primaryType="cq:Panel"
+                title="printcoverage">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Heading"
+                        name="./pubtitle"
+                        xtype="textfield"/>
+                    <subheading
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Publication Title"
+                        name="./pubsubtitle"
+                        xtype="textfield"/>
+                    <articleDate
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Publication Date"
+                        format="m/d/Y"
+                        name="./publicationdate"
+                        xtype="datefield"/>
+                    <description
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Description"
+                        height="150"
+                        name="./description"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </description>
+                </items>
+            </conf>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,95 @@
+/*
+  Css for annualReports Component
+*/
+.annualReports .annualReportInput{
+    width:149px;
+    float:left;
+    text-align:center;
+    color:#000000;
+    font-family:"SegoeUI";
+    font-size:19px;
+    padding:5px 0;
+    border:1px solid #333333;
+    margin:0 0 20px 15px;
+}
+.annualReports .annualReportPdf{
+    width:auto;
+    float:left;
+    margin:0 0 0 20px;
+}
+.annualReports .annualViewPdf{
+    width:auto;
+    float:left;
+    text-align:-webkit-auto;
+    color:#000000;
+    font-size:15px;
+    margin:20px 0 0 36px;
+}
+.annualReports .annualViewPdf span {
+    color:#f00;
+    display:block;
+    text-decoration: inherit;
+}
+.annualReports .quarterlyReportLeft {
+    border-right: 1px solid #cccccc;
+    float: left;
+    margin: 32px 0px 25px 0px;
+    width: 50%;
+}
+.annualReports :nth-child(even){
+    border-right:2px solid #ffffff;
+}
+.annualReports :nth-of-type(4n) .quarterlyContent{
+    border-bottom:2px solid #ffffff;
+}
+.annualReports :nth-of-type(4n-1) .quarterlyContent{
+    border-bottom:2px solid #ffffff;
+}
+.annualReports .quarterlyContent {
+    border-bottom: 1px solid #cccccc;
+    float: left;
+    margin-left: 18%;
+    width: 66%;
+    padding-bottom: 20px;
+}
+.annualReports .paginationAwards{
+    clear:both;
+    margin:40px 0 40px 23%;
+}
+.annualReports .paginationAwards ul{
+    margin:0px;
+    padding:6px 0px 5px 100px;
+    list-style:none
+}
+.annualReports .paginationAwards ul li{
+    font-family:"SegoeUI";
+    font-size:24px;
+    float:left;
+    margin:0px;
+    padding:0px;
+}
+.annualReports .paginationAwards ul li a{
+    color:#333333;
+    padding:0 15px;
+    text-decoration:none;
+}
+.annualReports .paginationAwards ul li a.active{
+    color:#ee1c24;
+}
+.annualReports .noBorder {
+    border: 0px !important;
+}
+.dealerLocator.dealerTable {
+    margin-top: -60px;
+}
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    background-color: orange;
+}
+
+
+.signUpWrap .errorWrapper ul {
+    padding: 0px;
+    margin: 0px;
+    color: red;
+    font-weight: bold;
+}

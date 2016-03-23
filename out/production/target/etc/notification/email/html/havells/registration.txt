@@ -1,0 +1,15 @@
+Hi ${username}
+
+You have been registered with ${email}
+
+To verify Please Click the link given below:
+
+${click-link}
+
+If you could not open this link, just use the code given below:
+
+${token}
+
+
+
+This is an automatically generated email, please do not reply to it.

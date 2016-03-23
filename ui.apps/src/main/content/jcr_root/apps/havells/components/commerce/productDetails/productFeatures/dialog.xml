@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <basicInfo
+                jcr:primaryType="cq:Panel"
+                title="Product Features">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading
+                            jcr:primaryType="cq:Widget"
+                            name="./heading"
+                            xtype="textfield"/>
+                    <fields
+                        jcr:primaryType="nt:unstructured"
+                        fieldLabel="Feature Type:"
+                        name="./featureType"
+                        type="radiogroup"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <none
+                                    jcr:primaryType="cq:Widget"
+                                    text="None"
+                                    value="none"/>
+                            <detailfeatures
+                                    jcr:primaryType="cq:Widget"
+                                    text="Details Features"
+                                    value="detailFeatures"/>
+                            <FAQ
+                                jcr:primaryType="cq:Widget"
+                                text="FAQ"
+                                value="faq"/>
+                            <technicalSpecification
+                                jcr:primaryType="cq:Widget"
+                                text="Technical Specification"
+                                value="techspecs"/>
+                            <technicalDrawing
+                                    jcr:primaryType="cq:Widget"
+                                    text="Technical Drawing"
+                                    value="techImages"/>
+                            <accesories
+                                    jcr:primaryType="cq:Widget"
+                                    text="Accessories"
+                                    value="accessories"/>
+                        </options>
+                    </fields>
+                </items>
+            </basicInfo>
+        </items>
+    </items>
+</jcr:root>

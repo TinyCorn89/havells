@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          title="Price Component"
+          xtype="dialog">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Price_x0020_Information
+                    jcr:primaryType="cq:Panel"
+                    title="Tabs">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title"
+                            name="./title"
+                            xtype="textfield"/>
+                    <Range
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Range of the product"
+                            name="./headerInfo"
+                            xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                hideLabel="{Boolean}true"
+                                layout="form"
+                                xtype="multifiedpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <min-price
+                                        jcr:primaryType="cq:Widget"
+                                        allowBlank="{Boolean}false"
+                                        dName="field"
+                                        fieldDescription="Enter the min price of product"
+                                        fieldLabel="Min price"
+                                        xtype="numberfield"/>
+                                <max-price
+                                        jcr:primaryType="cq:Widget"
+                                        allowBlank="{Boolean}false"
+                                        dName="width"
+                                        fieldDescription="Enter the max price of product"
+                                        fieldLabel="Max price"
+                                        xtype="numberfield"/>
+                                <desc-range
+                                        jcr:primaryType="cq:Widget"
+                                        allowBlank="{Boolean}true"
+                                        dName="priceDesc"
+                                        fieldDescription="Enter the descriptive range of price of product"
+                                        fieldLabel="Descriptive price range"
+                                        xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </Range>
+                </items>
+            </Price_x0020_Information>
+        </items>
+    </items>
+</jcr:root>

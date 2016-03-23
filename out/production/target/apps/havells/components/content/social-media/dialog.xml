@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Havells Share Social"
+    width="700"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <socialShare
+                jcr:primaryType="cq:Widget"
+                title="Social Share Links"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <emailSubject
+                            jcr:primaryType="nt:unstructured"
+                            defaultValue="Check out this page from Havells"
+                            fieldLabel="Subject for Email"
+                            name="./emailSubject"
+                            xtype="textfield"/>
+                    <email-text
+                            jcr:primaryType="nt:unstructured"
+                            defaultValue="Link"
+                            fieldLabel="Text for Email"
+                            name="./emailText"
+                            xtype="textfield"/>
+                    <entries
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Click the '+' to add a new share link"
+                            fieldLabel="Share Links"
+                            name="./links"
+                            prefix="./"
+                            width="200"
+                            xtype="multicompositefield">
+                        <fieldConfigs jcr:primaryType="cq:WidgetCollection">
+                            <social
+                                    jcr:primaryType="cq:Widget"
+                                    name="social"
+                                    type="select"
+                                    width="250"
+                                    xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <Facebook
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Facebook"
+                                            value="fa-facebook"/>
+                                    <Twitter
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Twitter"
+                                            value="fa-twitter"/>
+                                    <GooglePlus
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Google Plus"
+                                            value="fa-google-plus-square"/>
+                                    <Envelope
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Envelope"
+                                            value="fa-envelope"/>
+                                </options>
+                            </social>
+                        </fieldConfigs>
+                    </entries>
+                </items>
+            </socialShare>
+        </items>
+    </items>
+</jcr:root>

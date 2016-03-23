@@ -1,0 +1,365 @@
+.quarterlyReportsWrapper{
+    float:left;
+    width:90%;
+}
+.quarterlyReports{
+    float:left;
+    width:100%;
+    padding:0 0 30px 0;
+    margin:0 0 30px 0;
+    border-bottom:3px solid #e5e5e5;
+}
+.quarterlyReports ul{
+    list-style:none;
+    padding:0px;
+    margin:0px;
+}
+.quarterlyReports ul li{
+    float:left;
+    width:30%;
+    margin:25px 5% 0 0;
+}
+.quarterlyReports ul li:nth-child(3n){
+    margin-right:0px;
+}
+.pdfImage{
+    float:left;
+    width:24%;
+    margin:0 5% 0 0;
+}
+.published{
+    float:left;
+    width:71%;
+    color:#000;
+    font-size:12px;
+    line-height:17px;
+    font-weight:bold;
+    margin:5px 0 0 0;
+}
+.published span{
+    display:block;
+    color:#f00;
+}
+.innerquarterlyReports{
+    float:left;
+    width:100%;
+}
+
+
+/*--------------nikhil css---------------*/
+
+.quarterlyReportLeft{
+    border-right: 1px solid #cccccc;
+    float:left;
+    margin:50px 0 0 0;
+    width:49%;
+}
+.quarterlyReportLeft.noBorderRight2 {
+    clear:left;
+}
+.quarterlyReportLeft ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+.quarterlyReportLeft ul li{
+    margin:0 0 25px 0;
+    padding:0px;
+    width:100%;
+    float:left;
+}
+.noBorderBottom2, .noBorderBottom3{
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+.quarterlyReportRight{
+    float:left;
+    margin:0 0 0 0;
+    width:50%;
+}
+
+.quarterlyReportRight ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+.quarterlyReportRight ul li{
+    margin:0 0 25px 0;
+    padding:0px;
+    width:100%;
+    float:left;
+}
+.quarterlyContent{
+    float:left;
+    margin-left:20%;
+    margin-top: -25px;
+    width:66%;
+}
+.quarterlyRightContent{
+    float: left;
+    margin-left: 25%;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    width: auto;
+}
+.pdfImageIcon{
+    float:left;
+    padding-right: 63px;
+    width:24%;
+}
+.pdfDownloadSection{
+    color: #000;
+    float: left;
+    font-size: 12px;
+    word-break:break-all;
+    font-weight: bold;
+    line-height: 17px;
+    width:56%;
+}
+.pdfDownloadSection span {
+    color: #f00;
+    display: block;
+}
+
+
+
+.noBorderBottom2 , .noBorderBottom3{
+    border-bottom:none;
+}
+.quaterlySelectSection{
+    width:50%;
+    float:right;
+    margin-top:-51px;
+    margin-bottom:50px;
+}
+.quaterlySearchBox{
+    width:160px;
+    float:left;
+    position:relative;
+    float:right;
+}
+.quaterlySearchBox .searchInner{
+    width:100%;
+    float:left;
+    padding:5px 10px;
+    border:1px solid #999999;
+    font-size:17px;
+    color:#a3a3a3;
+    text-transform:uppercase;
+}
+.quaterlySelectBox{
+    width:172px;
+    float:left;
+}
+.quaterlySearchBox span{
+    position:absolute;
+    top:5px;
+    right:10px;
+    cursor:pointer;
+    border-left:1px solid #999;
+    padding:0 0 0 5px;
+}
+.quaterlySelectBox {
+    float: right;
+    width: 200px;
+    margin-top: -2px;
+}
+.quaterlySelectBox select {
+    border: 1px solid #999999;
+    border-radius: 5px;
+    color: #ee3b3b;
+    font-weight: bold;
+    padding:6px;
+    text-transform: uppercase;
+    float:left;
+    width:100%;
+}
+.sutainibilityIntro{
+    text-transform:capitalize;
+}
+.noBorderRight1 , .noBorderRight3{
+    border-right:none;
+}
+.noBorder4{
+    border:none;
+}
+.quarterlyContent h2{
+    margin-bottom:25px;
+}
+.quaterlyWrapper{
+    width:100%;
+    position:relative;
+    float:left;
+}
+
+/*------------disclouser css start---------------*/
+
+.disclouserContent{
+    float:left;
+    width:100%;
+}
+.disclouserContentRight{
+    margin-left:25%;
+}
+.pdfImageDisclosures{
+    float:left;
+    margin:0 7% 0 0;
+    width:auto;
+}
+
+
+.pdfDownloadDisclosures{
+    color:#000;
+    float:left;
+    line-height:17px;
+    margin:5px 0 0 0;
+    font-family:'SegoeUI';
+    font-size:12px;
+    width:73%;
+}
+.pdfDownloadDisclosures span{
+    color:#f00;
+    display:block;
+}
+.twoColRight h4{
+    font-size:20px;
+    color:#585858;
+    font-weight:normal;
+    font-family:'SegoeUI';
+}
+
+li.pdf {
+    padding-left: 15px;
+    list-style-type: none;
+    margin: 0 0 25px 0;
+}
+
+/*------------disclouser css start---------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .twoColRight .mediaVideoWrapper select {
+        float: right;
+        width: 100%;
+        margin:0 0 2% 0;
+        padding:5%;
+    }
+
+    .quarterlyReportLeft{
+        width:99%;
+        border-bottom:1px solid #999;
+        margin-bottom:20px;
+        border-right:none;
+    }
+    .quarterlyReportRight{
+        width:99%;
+        border-right:0;
+    }
+    .quarterlyContent{
+        border-bottom:none;
+    }
+    .quarterlyReportsWrapper{
+        width:100%;
+    }
+
+    .quaterlySearchBox{
+        float: right;
+        margin-right: 10px;
+        width:135px;
+    }
+    .quaterlySelectBox{
+        width:135px;
+        float:left;
+    }
+
+    .quaterlySelectSection {
+        float:left;
+        margin-bottom:50px;
+        margin-top:0;
+        width:100%;
+    }
+    .quarterlyContent{
+        width:98%;
+        margin:0 0 0 2%;
+    }
+    .quarterlyReports{
+        margin-bottom:0;
+        padding-bottom:0;
+    }
+    .quarterlyReportLeft{
+        width:49%;
+    }
+    .pdfDownloadSection{
+        width:auto;
+    }
+    .pdfDownloadDisclosures{
+        width:40%;
+        margin-left:0
+    }
+}
+@media only screen and (max-width: 479px) {
+    .twoColRight .mediaVideoWrapper select {
+        float: right;
+        width: 100%;
+        margin:2% 0;
+        padding:5%;
+    }
+    .quarterlyReportLeft{
+        width:99%;
+        border-bottom:1px solid #999;
+        margin-bottom:20px;
+        border-right:none;
+    }
+    .quarterlyReportRight{
+        width:99%;
+        border-right:0;
+    }
+    .quarterlyContent{
+        border-bottom:none;
+    }
+    .quarterlyReportsWrapper{
+        width:100%;
+    }
+
+    .quaterlySearchBox{
+        float: right;
+        margin-right: 10px;
+        width:135px;
+    }
+    .quaterlySelectBox{
+        width:135px;
+        float:left;
+    }
+
+    .quaterlySelectSection {
+        float:left;
+        margin-bottom:50px;
+        margin-top:0;
+        width:100%;
+    }
+    .quarterlyContent{
+        width:98%;
+        margin:0 0 0 2%;
+    }
+    .quarterlyReports{
+        margin-bottom:0;
+        padding-bottom:0;
+    }
+
+    /*-------new css start---------*/
+    .pdfDownloadDisclosures{
+        width:60%;
+        margin-right:0;
+    }
+    .disclouserContentRight{
+        margin-left:0;
+    }
+    .pdfDownloadSection{
+        width:auto;
+    }
+    .pdfImageIcon{
+        width:auto;
+    }
+}

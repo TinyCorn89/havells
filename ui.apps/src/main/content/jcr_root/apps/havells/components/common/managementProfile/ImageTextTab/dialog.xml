@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Tabbed-component"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Config
+                    jcr:primaryType="cq:Widget"
+                    title="Configuration"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Tab Heading"
+                            height="200"
+                            name="./heading"
+                            xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                            <misctools
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                        </rtePlugins>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <blockHandling
+                                    jcr:primaryType="nt:unstructured"
+                                    removeSingleParagraphContainer="{Boolean}true"/>
+                        </htmlRules>
+                    </title>
+                </items>
+            </Config>
+            <tab1
+                    jcr:primaryType="cq:Widget"
+                    ddGroups="[media]"
+                    fileNameParameter="./fileName"
+                    fileReferenceParameter="./fileReference"
+                    allowUpload="{Boolean}false"
+                    name="./file"
+                    title="Image"
+                    xtype="html5smartimage"/>
+        </items>
+    </items>
+</jcr:root>

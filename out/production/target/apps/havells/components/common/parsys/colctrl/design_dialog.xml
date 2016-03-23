@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Column Control (Design)"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <layouts
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Allowed Formats"
+            name="./layouts"
+            value="2;cq-colctrl-lt0&#x9;2 Columns (50%, 50%)&#xa;3;cq-colctrl-lt1&#x9;3 Columns (33%, 33%, 33%)&#xa;4;cq-colctrl-lt2&#x9;4 Columns (25%, 25%, 25%, 25%)&#xa;5;cq-colctrl-lt3&#x9;5 Columns (20%, 20%, 20%, 20%, 20%)"
+            xtype="textarea"/>
+    </items>
+</jcr:root>

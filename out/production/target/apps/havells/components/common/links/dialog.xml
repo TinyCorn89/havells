@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    width="{Long}800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs
+            jcr:primaryType="cq:TabPanel"
+            xtype="tabpanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tab1
+                    jcr:primaryType="nt:unstructured"
+                    title="Top Links"
+                    xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <pages
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Click the '+' to add a new page"
+                                fieldLabel="Pages"
+                                name="./pages"
+                                xtype="multifield">
+                            <fieldConfig
+                                    jcr:primaryType="cq:Widget"
+                                    border="true"
+                                    hideLabel="{Boolean}true"
+                                    layout="form"
+                                    padding="10px"
+                                    width="1000"
+                                    xtype="multifiedpanel">
+                                <items jcr:primaryType="cq:WidgetCollection">
+                                    <link
+                                            jcr:primaryType="cq:Widget"
+                                            dName="link"
+                                            fieldLabel="Link"
+                                            allowBlank="{Boolean}false"
+                                            xtype="textfield"/>
+                                    <path
+                                            jcr:primaryType="cq:Widget"
+                                            dName="path"
+                                            fieldLabel="Path"
+                                            xtype="pathfield"/>
+                                </items>
+                            </fieldConfig>
+                        </pages>
+                    </items>
+                </tab1>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

@@ -1,0 +1,8 @@
+
+Hi ${userName},
+
+Your Query has been Recorded.
+We will revert to you soon.
+
+Regards
+Admin

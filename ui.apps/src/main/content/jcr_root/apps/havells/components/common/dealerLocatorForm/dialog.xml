@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Carousel"
+    manageTabs="function(tab,noSwitch){var tabs=['carousel','list','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=2;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="Dealer Loctor"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab
+                jcr:primaryType="cq:Widget"
+                title="Properties"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <contentPath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Dealers Data"
+                        name="./contentPath"
+                        rootPath="/etc/havells/dealersdata"
+                        xtype="pathfield"/>
+                    <productsPath
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Dealer Products Path"
+                            defaultValue="/etc/havells/dealerproducts"
+                            name="./dealerProductPath"
+                            rootPath="/etc/havells/dealerproducts"
+                            xtype="pathfield"/>
+                </items>
+            </tab>
+        </items>
+    </items>
+</jcr:root>

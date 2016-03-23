@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+        jcr:primaryType="cq:Dialog"
+        title="List"
+        xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <colctrl
+            jcr:primaryType="cq:Widget"
+            title="Column Layout Settings"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <layout
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="1"
+                    fieldLabel="Column Layout"
+                    name="./columnLayout"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <oneCol
+                                jcr:primaryType="nt:unstructured"
+                                text="1 Column"
+                                value="1"/>
+                        <twoCol
+                            jcr:primaryType="nt:unstructured"
+                            text="2 Columns"
+                            value="2"/>
+                        <threeCol
+                            jcr:primaryType="nt:unstructured"
+                            text="3 Columns"
+                            value="3"/>
+                    </options>
+                    <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(component,value,isChecked){ManageFields.columnOptions(component);}"
+                            selectionchanged="function(component,value,isChecked){ManageFields.columnOptions(component);}"/>
+                </layout>
+                <twoColOptions
+                        jcr:primaryType="nt:unstructured"
+                        title="Two Column Options"
+                        id="twoCol"
+                        itemId="2"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <twoColOption
+                                jcr:primaryType="cq:Widget"
+                                defaultValue="1"
+                                fieldLabel="2 Column Layout"
+                                name="./twoColumnLayout"
+                                type="select"
+                                xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <thirtySeventy
+                                        jcr:primaryType="nt:unstructured"
+                                        text="30% 70%"
+                                        value="0"/>
+                                <fiftyFifty
+                                        jcr:primaryType="nt:unstructured"
+                                        text="50% 50%"
+                                        value="1"/>
+                                <seventyThirty
+                                        jcr:primaryType="nt:unstructured"
+                                        text="70% 30%"
+                                        value="2"/>
+                                <sixtyFourty
+                                        jcr:primaryType="nt:unstructured"
+                                        text="60% 40%"
+                                        value="3"/>
+                                <fourtySixty
+                                        jcr:primaryType="nt:unstructured"
+                                        text="40% 60%"
+                                        value="4"/>
+                            </options>
+                        </twoColOption>
+                    </items>
+                </twoColOptions>
+                <threeColOptions
+                        jcr:primaryType="nt:unstructured"
+                        title="Three Column Options"
+                        id="threeCol"
+                        itemId="3"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <threeColOption
+                                jcr:primaryType="cq:Widget"
+                                defaultValue="2"
+                                fieldLabel="3 Column Layout"
+                                name="./threeColumnLayout"
+                                type="select"
+                                xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <twentySixtyTwenty
+                                        jcr:primaryType="nt:unstructured"
+                                        text="20% 60% 20%"
+                                        value="0"/>
+                                <thirtyFourtyThirty
+                                        jcr:primaryType="nt:unstructured"
+                                        text="30% 40% 30%"
+                                        value="1"/>
+                                <ThirtyThree
+                                        jcr:primaryType="nt:unstructured"
+                                        text="33% 33% 33%"
+                                        value="2"/>
+                            </options>
+                        </threeColOption>
+                    </items>
+                </threeColOptions>
+                <dummy
+                        jcr:primaryType="cq:Widget"
+                        xtype="dialogfieldset"
+                        baseCls="classToFixDialogIssue">
+                </dummy>
+                <border-vertical
+                        jcr:primaryType="nt:unstructured"
+                        title="Vertical Border Options"
+                        xtype="fieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <leftBorder
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel = "Left Border"
+                                name="./leftBorder"
+                                type="checkbox"
+                                xtype="selection"/>
+                        <middleBorder
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel = "Middle Border"
+                                name="./middleBorder"
+                                type="checkbox"
+                                xtype="selection"/>
+                        <padding
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel = "Cell Padding"
+                                fieldDescription="define the space between columns(in px)"
+                                name="./padding"
+                                width="100"
+                                xtype="numberfield"/>
+                        <rightBorder
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel = "Right Border"
+                                name="./rightBorder"
+                                type="checkbox"
+                                xtype="selection"/>
+                    </items>
+                </border-vertical>
+                <border-horizontal
+                        jcr:primaryType="nt:unstructured"
+                        title="Horizontal Border Options"
+                        xtype="fieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <topBorder
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel = "Top Border"
+                                name="./topBorder"
+                                type="checkbox"
+                                xtype="selection"/>
+                        <bottomBorder
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel = "Bottom Border"
+                                name="./bottomBorder"
+                                type="checkbox"
+                                xtype="selection"/>
+                    </items>
+                </border-horizontal>
+            </items>
+        </colctrl>
+    </items>
+</jcr:root>

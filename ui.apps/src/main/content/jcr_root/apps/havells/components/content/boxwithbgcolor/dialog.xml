@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Background Color"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <color
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Color"
+                    name="./bgcolor"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <blue
+                            jcr:primaryType="nt:unstructured"
+                            text="blue"
+                            value="#0000FF"/>
+                        <grey
+                            jcr:primaryType="nt:unstructured"
+                            text="Grey"
+                            value="#E0E0E0"/>
+                        <black
+                            jcr:primaryType="nt:unstructured"
+                            text="black"
+                            value="#000000"/>
+                    </options>
+                </color>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

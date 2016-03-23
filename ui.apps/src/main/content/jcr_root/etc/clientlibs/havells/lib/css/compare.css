@@ -1,0 +1,165 @@
+.compareWrap {
+    float:left;
+    width:100%;
+    margin:2% 0 70px 0;
+}
+.price {
+    float: left;
+    width: 100%;
+    color: #f90100;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.compareWrap h1 {
+	text-transform:none;
+}
+.compareWrap h1 span {
+    display:block;
+    color:#707070;
+    font-size:14px;
+    margin:3px 0 0 0;
+}
+.tableScrollWrapper {
+    float:left;
+    width:100%;
+}
+.compareWrap .compare {
+    float:left;
+    width:100%;
+}
+.compareWrap .compare .table {
+	display: table;
+    width:100%;
+}
+.compareWrap .compare .table .tableBody{
+    border: 1px solid #dcdcdc;
+    display: table;
+    width: 100%;
+}
+.compareWrap .compare .table .tableRow{
+    display: table-row;
+    width: 100%;
+}
+.tableHeading {
+    background:#f9f9f9;
+    padding:10px 2%;
+    text-align:left;
+    font-weight:bold;
+    font-size:16px;
+    border:1px solid #dcdcdc;
+    color: #ff0000;
+
+}
+.compareWrap .compare .table .tableRow .tableData {
+    display: table-cell;
+    color:#4c4c4c;
+    font-size:14px;
+    font-weight:normal;
+    padding:10px 1.5%;
+    vertical-align:top;
+    border:1px solid #dcdcdc;
+}
+.compareWrap .compare .table .tableRow .tableData .compareImage {
+    float:left;
+    width:100%;
+    text-align:center;
+}
+.compareWrap .compare .table .tableRow .tableData .compareImage img {
+    width:100%;
+}
+.compareName {
+    float:left;
+    width:100%;
+    color:#4c4c4c;
+    font-size:14px;
+    text-align:left;
+    margin-bottom:3px;
+    font-weight:bold;
+}
+.compareWrap .compare .table .tableRow .tableData .compareImage .comparerating {
+    float:left;
+    width:100%;
+    margin-bottom:20px;
+    text-align:left;
+}
+.compareWrap .compare .table .tableRow .tableData .compareImage .comparerating span {
+    font-size:14px;
+    color:#818181;
+}
+.compareWrap .compare .table .tableRow .tableData .compareImage .comparerating span:last-child {
+    margin-left:10px;
+}
+.compareWrap .compare .table .tableRow .tableData .compareImage .comparerating .fa-star {
+    color:#f90100;
+}
+.nonRating {
+    color:#d7d7d7 !important;
+}
+.price {
+    float:left;
+    width:100%;
+    color:#f90100;
+    font-size:18px;
+    line-height:20px;
+    font-weight:bold;
+}
+.inStock {
+    float:left;
+    width:100%;
+    color:#339900;
+    font-size:14px;
+}
+.addToCart {
+    float:left;
+    width:100%;
+    margin:14px 0 0 0;
+}
+.addToCart .buttonGlbl a {
+    background:#ee3b3b;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.geyser {
+    float:left;
+    width:100%;
+}
+.geyser span {
+    display:block;
+    color:#4c4c4c;
+    font-weight:bold;
+}
+.geyser select {
+    float:left;
+    width:170px;
+    color:#4c4c4c;
+    padding:4px 3%;
+    margin-top:20px;
+    font-size:14px;
+    border-top:1px solid #dddddd;
+    border-left:1px solid #bebebe;
+    border-right:1px solid #bebebe;
+    border-bottom:1px solid #dddddd;
+    background:url(../img/compare-selectBg.jpg) left top repeat-x;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 479px) {
+    .compareWrap {
+        padding:0 2%;
+    }
+    .tableScrollWrapper {
+        overflow-x:scroll;
+        overflow-y:hidden;
+    }
+    .compareWrap .compare {
+        width:950px;
+    }
+    .compareWrap .compare .table .tableRow .tableData {
+        width:15%;
+    }
+    .geyser select {
+        width:100%;
+    }
+}

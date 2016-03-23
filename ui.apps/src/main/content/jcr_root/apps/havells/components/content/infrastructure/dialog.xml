@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="400"
+    title="Infrastructure"
+    width="600"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <image
+                jcr:primaryType="cq:Widget"
+                ddGroups="[media]"
+                fileNameParameter="./fileName"
+                fileReferenceParameter="./fileReference"
+                name="./file"
+                requestSuffix=".img.png"
+                title="Image"
+                xtype="html5smartimage"/>
+            <description
+                jcr:primaryType="cq:Widget"
+                title="Description"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Heading"
+                        height="100"
+                        name="./heading"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </heading>
+                    <description
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Description"
+                        name="./description"
+                        xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </description>
+                </items>
+            </description>
+            <moreinfo
+                jcr:primaryType="cq:Widget"
+                title="More Info."
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <sections
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Sections"
+                        name="./sections"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multifiedpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <number
+                                    jcr:primaryType="cq:Widget"
+                                    dName="number"
+                                    fieldLabel="Number"
+                                    xtype="textfield"/>
+                                <label
+                                    jcr:primaryType="cq:Widget"
+                                    dName="label"
+                                    fieldLabel="Label"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </sections>
+                </items>
+            </moreinfo>
+            <advanceimgprop
+                jcr:primaryType="cq:Widget"
+                title="Advanced Image Properties"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <alt
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Alt Text"
+                        name="./alt"
+                        xtype="textfield"/>
+                    <resType
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="{Boolean}true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                </items>
+            </advanceimgprop>
+        </items>
+    </items>
+</jcr:root>

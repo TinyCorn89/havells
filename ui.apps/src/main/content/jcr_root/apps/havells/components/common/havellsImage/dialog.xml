@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Havells-Image"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <image
+                    jcr:primaryType="cq:Widget"
+                    xtype="cqinclude"
+                    path="/libs/foundation/components/image/dialog/items/image.infinity.json"/>
+            <Overlay
+                    jcr:primaryType="cq:Widget"
+                    title="Overlay Text"
+                    xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+            <title
+                    jcr:primaryType="cq:Widget"
+                    name="./overlay"
+                    fieldLabel="Enter the Overlay Text"
+                    xtype="richtext" >
+                <rtePlugins jcr:primaryType="nt:unstructured">
+                    <paraformat
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    <edit
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    <format
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                </rtePlugins>
+            </title>
+                </items>
+            </Overlay>
+
+            <Config
+                    jcr:primaryType="cq:Widget"
+                    title="Configuration"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <size
+                            jcr:primaryType="cq:Widget"
+                            xtype="cqinclude"
+                            path="/libs/foundation/components/image/dialog/items/advanced/items/size.infinity.json"/>
+                                        <link
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Make image Clickable"
+                            fieldLabel="Clickable"
+                            name="./clickable"
+                            type="checkbox"
+                            xtype="selection">
+                        <listeners
+                                jcr:primaryType="nt:unstructured"
+                                loadcontent="function(component,value,isChecked){var fieldset = component.findParentByType('panel').findByType('dialogfieldset')[0]; if(component.getValue().length == 1){ fieldset.show();}else{fieldset.hide();} }"
+                                selectionchanged="function(component,value,isChecked){var fieldset = component.findParentByType('panel').findByType('dialogfieldset')[0]; if(component.getValue().length == 1){ fieldset.show();}else{fieldset.hide();} }"/>
+                    </link>
+                    <clickableOptions
+                            jcr:primaryType="nt:unstructured"
+                            title="Image Click Options"
+                            id="twoCol"
+                            itemId="2"
+                            xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <linkURL
+                                    jcr:primaryType="cq:Widget"
+                                    xtype="cqinclude"
+                                    width="150px"
+                                    path="/libs/foundation/components/image/dialog/items/advanced/items/linkURL.infinity.json"/>
+                            <openAs
+                                    jcr:primaryType="cq:Widget"
+                                    defaultValue="0"
+                                    fieldLabel="Open Link As"
+                                    name="./openAs"
+                                    type="select"
+                                    width="150px"
+                                    xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <sameWindow
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Same Window"
+                                            value=" "/>
+                                    <newWindow
+                                            jcr:primaryType="nt:unstructured"
+                                            text="New Window"
+                                            value="target='_blank'"/>
+                                    <genericModel
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Generic Model"
+                                            value="class='imgAnchor'"/>
+                                </options>
+                            </openAs>
+                        </items>
+                    </clickableOptions>
+                </items>
+            </Config>
+        </items>
+    </items>
+</jcr:root>

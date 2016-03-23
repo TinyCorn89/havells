@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Price Component"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Configuration
+                jcr:primaryType="cq:Panel"
+                title="Tabs">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <drop-down
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter the url"
+                        name="./headerInfo"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            xtype="multifiedpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <location
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="{Boolean}false"
+                                    dName="field"
+                                    fieldDescription="Enter the Location Name"
+                                    fieldLabel="Location Name"
+                                    xtype="textfield"/>
+                                <link
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="{Boolean}false"
+                                    dName="width"
+                                    fieldDescription="Enter the Location Page Url"
+                                    fieldLabel="Location Url Link"
+                                    xtype="pathfield"/>
+                            </items>
+                        </fieldConfig>
+                    </drop-down>
+                </items>
+            </Configuration>
+        </items>
+    </items>
+</jcr:root>

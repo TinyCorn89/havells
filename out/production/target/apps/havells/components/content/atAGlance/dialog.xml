@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    cancelText=""
+    height="500"
+    okText=""
+    title="At A Glance Component Dialog"
+    width="600"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <basicInfo
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Configuration"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        emptyText="Enter title"
+                        fieldDescription="Enter Title"
+                        fieldLabel="Title"
+                        name="./title"
+                        selectOnFocus="false"
+                        xtype="textfield"/>
+                    <subTitle
+                        jcr:primaryType="nt:unstructured"
+                        emptyText="Sub Title"
+                        fieldDescription="Enter Sub Title"
+                        fieldLabel="Sub Title"
+                        name="./subTitle"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Enter the Description"
+                        fieldLabel="Description"
+                        inputType="text"
+                        name="./description"
+                        validateOnBlur="true"
+                        xtype="richtext"/>
+                </items>
+            </basicInfo>
+        </items>
+    </items>
+</jcr:root>

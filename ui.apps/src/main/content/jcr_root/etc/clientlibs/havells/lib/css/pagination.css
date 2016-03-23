@@ -1,0 +1,6 @@
+.paginationWrapper ul li a.active{
+    cursor: pointer;
+}
+.paginationWrapper ul li a{
+    cursor: pointer;
+}

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          title="item"
+          xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Main
+                    jcr:primaryType="cq:Panel"
+                    title="Main">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <textOverlay
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Link Label"
+                            fieldLabel="Text Overlay:"
+                            name="./textOverlay"
+                            xtype="textfield"/>
+                    <url
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Link To:"
+                            name="./url"
+                            xtype="pathfield"/>
+                </items>
+            </Main>
+            <Advanced
+                    jcr:primaryType="cq:Panel"
+                    title="Advanced">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <linkOptions
+                            jcr:primaryType="cq:Widget"
+                            defaultValue=" "
+                            fieldDescription="Provide Options to open link"
+                            fieldLabel="Link Options"
+                            name="./openOption"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <sameWindow
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Open in Same Window"
+                                    value=" "/>
+                            <newWindow
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Open in New Window"
+                                    value="target='_blank'"/>
+                            <downloadable
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Download File"
+                                    value="download"/>
+                            <genericModel
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Open in Model"
+                                    value="class='modalGeneric'"/>
+
+                        </options>
+                    </linkOptions>
+                </items>
+            </Advanced>
+            <Styling
+                    jcr:primaryType="cq:Panel"
+                    title="Styling">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <linkType
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Select the style of the link"
+                            fieldLabel="Link Type"
+                            name="./linkType"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <_x0030_1-simple
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Simple Link"
+                                    value=" "/>
+                            <_x0040_1-arrow-right
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Arrow Right Link"
+                                    value="fa fa-arrow-right"/>
+                            <_x0040_1-arrow-left
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Arrow Left Link"
+                                    value="fa fa-arrow-left"/>
+                            <_x0040_1-arrow-up
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Arrow Up Link"
+                                    value="fa fa-arrow-up"/>
+                            <_x0040_1-arrow-down
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Arrow Down Link"
+                                    value="fa fa-arrow-down"/>
+                        </options>
+                    </linkType>
+                    <arrowPosition
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Select the position of arrow."
+                            defaultValue="left"
+                            fieldLabel="Arrow Position"
+                            name="./arrowposition"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <_x0030_1-left
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Left"
+                                    value="left"/>
+                            <_x0040_1-right
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Right"
+                                    value="right"/>
+                        </options>
+                    </arrowPosition>
+                    <fontSize
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Selct the font Size."
+                            defaultValue="12px"
+                            fieldLabel="Font Size"
+                            name="./fontsize"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <_x0030_1-12px
+                                    jcr:primaryType="nt:unstructured"
+                                    text="12px"
+                                    value="12px"/>
+                            <_x0040_1-13px
+                                    jcr:primaryType="nt:unstructured"
+                                    text="13px"
+                                    value="13px"/>
+                            <_x0040_1-14px
+                                    jcr:primaryType="nt:unstructured"
+                                    text="14px"
+                                    value="14px"/>
+                            <_x0040_1-15px
+                                    jcr:primaryType="nt:unstructured"
+                                    text="15px"
+                                    value="15px"/>
+                        </options>
+                    </fontSize>
+                    <color
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Color to apply "
+                            fieldLabel="Color"
+                            name="./color"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <_x0040_1-lightGrey
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Light Grey"
+                                    value="lightGrey"/>
+                            <_x0030_1-grey
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Grey"
+                                    value="grey"/>
+                            <_x0040_1-lightred
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Light Red"
+                                    value="lightred"/>
+                            <_x0040_1-red
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Dark Red"
+                                    value="darkred"/>
+                            <_x0040_1-whiteredtext
+                                    jcr:primaryType="nt:unstructured"
+                                    text="White with Grey Text"
+                                    value="whitegreytext"/>
+                            <_x0040_1-whitegreytext
+                                    jcr:primaryType="nt:unstructured"
+                                    text="White with Red Text"
+                                    value="whiteredtext"/>
+                        </options>
+                    </color>
+                    <isBoldText
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Check if text is bold."
+                            fieldLabel="Bold Text"
+                            name="./boldText"
+                            type="checkbox"
+                            xtype="selection"/>
+                    <linkHover
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="true"
+                            fieldDescription="Check if no color change on link hover."
+                            fieldLabel="Color change on link Hover"
+                            name="./linkhover"
+                            type="checkbox"
+                            xtype="selection"/>
+                </items>
+            </Styling>
+        </items>
+    </items>
+</jcr:root>

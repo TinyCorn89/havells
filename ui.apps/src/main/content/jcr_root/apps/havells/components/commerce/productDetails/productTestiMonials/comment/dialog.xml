@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Comment Component"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Details
+                    jcr:primaryType="cq:Widget"
+                    title="Configuration"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <Image
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Image"
+                            name="./fileReference"
+                            xtype="textfield">
+                    </Image>
+                    <comment
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Comment Description"
+                            name="./commentDesc"
+                            xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <paraformat
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                        </rtePlugins>
+                    </comment>
+                    <rating
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Rating"
+                            name="./commentRating"
+                            xtype="numberfield"/>
+                    <userName
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="user name"
+                            name="./userName"
+                            xtype="richtext">
+                    </userName>
+                    <date
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="date"
+                            name="./commentDate"
+                            xtype="richtext">
+                    </date>
+                </items>
+            </Details>
+        </items>
+    </items>
+</jcr:root>

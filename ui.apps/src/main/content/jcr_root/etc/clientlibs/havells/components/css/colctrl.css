@@ -1,0 +1,99 @@
+/* parsys component */
+div.par, div.rightpar {
+    clear: both;
+}
+div.parsys_column {
+    /* height: 100%; */
+    width: 100%;
+    float: left;
+    border: 0;
+    vertical-align:top;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 0;
+}
+div.section {
+    /* Property added to avoid IE hasLayout issue on paragraphs
+       see #20817 - IE6: div around Drag Components image not big enough
+    */
+    zoom: 1;
+}
+
+div.parsys_column .section {
+    overflow:hidden;
+    width: 100%;
+}
+
+/* column control layouts */
+div.cq-colctrl-cols {width: 100%; float: left; }
+
+div.cq-colctrl-default { width: 100%;}
+
+div.vLefttrue {   border-left: 1px solid #cccccc; overflow:auto; }
+div.vRighttrue {   border-right: 1px solid #cccccc; overflow:auto; }
+div.hToptrue {   border-top: 1px solid #cccccc; overflow:auto;}
+div.hBottomtrue {   border-bottom: 1px solid #cccccc; overflow:hidden; }
+div.vMiddletrue {   border-right: 1px solid #cccccc; }
+
+/* layout 0 : 50% 50% ( grid6 + grid6 ) */
+div.cq-colctrl-lt0 { }
+div.cq-colctrl-lt00-c0 { width: 30%; margin-right:0px}
+div.cq-colctrl-lt00-c1 { width: 70%; margin-left: 0px}
+
+div.cq-colctrl-lt01-c0 { width: 50%; margin-right:0px}
+div.cq-colctrl-lt01-c1 { width: 50%; margin-left: 0px}
+
+div.cq-colctrl-lt02-c0 { width: 70%; margin-right:0px}
+div.cq-colctrl-lt02-c1 { width: 30%; margin-left: 0px}
+
+div.cq-colctrl-lt03-c0 { width: 60%; margin-right:0px}
+div.cq-colctrl-lt03-c1 { width: 40%; margin-left: 0px}
+
+div.cq-colctrl-lt04-c0 { width: 40%; margin-right:0px}
+div.cq-colctrl-lt04-c1 { width: 60%; margin-left: 0px}
+
+/* layout 1 : 33% 33% 33%( grid4 + grid4 + grid4 ) */
+div.cq-colctrl-lt1 { }
+div.cq-colctrl-lt10-c0 { width: 20%; margin-right: 1px;}
+div.cq-colctrl-lt10-c1 { width: 59%; margin-left: 1px; margin-right: 1px;}
+div.cq-colctrl-lt10-c2 { width: 20%; margin-left: 1px; }
+
+div.cq-colctrl-lt11-c0 { width: 30%; margin-right: 1px;}
+div.cq-colctrl-lt11-c1 { width: 39%; margin-left: 1px; margin-right: 1px;}
+div.cq-colctrl-lt11-c2 { width: 30%; margin-left: 1px; }
+
+div.cq-colctrl-lt12-c0 { width: 33%; margin-right: 1px;}
+div.cq-colctrl-lt12-c1 { width: 33%; margin-left: 1px; margin-right: 1px;}
+div.cq-colctrl-lt12-c2 { width: 33%; margin-left: 1px; }
+
+/* layout 2: 16% 16% 16% 33% ( grid2.6 + grid2.6 + grid2.6 + grid4 ) */
+div.cq-colctrl-lt2 { }
+div.cq-colctrl-lt2-c0 { width: 25%; margin-right: 0px;}
+div.cq-colctrl-lt2-c1 { width: 25%; margin-left: 0px; margin-right: 0px;}
+div.cq-colctrl-lt2-c2 { width: 25%; margin-left: 0px; margin-right: 0px;}
+div.cq-colctrl-lt2-c3 { width: 25%; margin-left: 0px; }
+
+/* layout 3: 5 x 20% ( grid2.5 + grid2.5 + grid2.5 + grid2.5 + grid2.5 ) */
+div.cq-colctrl-lt3 { }
+div.cq-colctrl-lt3-c0 { width: 20%; margin-right: 0px;}
+div.cq-colctrl-lt3-c1 { width: 20%; margin-left: 0px; margin-right: 0px;}
+div.cq-colctrl-lt3-c2 { width: 20%; margin-left: 0px; margin-right: 0px;}
+div.cq-colctrl-lt3-c3 { width: 20%; margin-left: 0px; margin-right: 0px;}
+div.cq-colctrl-lt3-c4 { width: 20%; margin-left: 0px; }
+
+@media screen and (max-width: 767px) {
+
+    div.cq-colctrl-lt00-c0, div.cq-colctrl-lt00-c1,
+    div.cq-colctrl-lt01-c0, div.cq-colctrl-lt01-c1,
+    div.cq-colctrl-lt02-c0, div.cq-colctrl-lt02-c1,
+    div.cq-colctrl-lt10-c0, div.cq-colctrl-lt10-c1, div.cq-colctrl-lt10-c2,
+    div.cq-colctrl-lt11-c0, div.cq-colctrl-lt11-c1, div.cq-colctrl-lt11-c2,
+    div.cq-colctrl-lt12-c0, div.cq-colctrl-lt12-c1, div.cq-colctrl-lt12-c2 { width:100%; }
+
+}
+
+div.columnControl div.hToptrue div.video {
+    margin-top: 16%;
+    margin-left: 20%;
+}
+

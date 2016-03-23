@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Configuration settings for Gmail Connect access"
+    jcr:primaryType="cq:Template"
+    jcr:title="New Gmail Connect Configuration"
+    sling:resourceSuperType="cq/cloudserviceconfigs/templates/configpage"
+    allowedChildren=""
+    allowedPaths="[/etc/cloudservices/gmailconnect(/.*)?]"
+    ranking="{Long}90">
+    <jcr:content
+        cq:cloudservicename="gmailconnect"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="social/connect/components/gmailconnectpage"
+        thumbnailPath="/apps/social/connect/templates/gmailconnect/thumbnail.png"/>
+</jcr:root>

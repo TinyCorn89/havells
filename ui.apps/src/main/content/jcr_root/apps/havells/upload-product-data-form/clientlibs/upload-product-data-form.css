@@ -1,0 +1,51 @@
+.upload-product-data-form {
+    width: 75%;
+    margin: 25px 10px 0 10%;
+
+}
+
+.upload-product-data-form .uploadProductData {
+    padding: 25px 50px 20px 10%;
+    background: #f5f5f5;
+    float: left;
+}
+
+.upload-product-data-form form label {
+    width: 182px;
+    float: left;
+    font-family: 'SegoeUI';
+    font-size: 14px;
+    color: #797979;
+    margin: 0 0 0 0;
+}
+
+.upload-product-data-form form input {
+    width: 200px;
+    float: left;
+
+    font-size: 14px;
+    color: #cccccc;
+    padding: 5px 0 5px 14px;
+    border: none;
+    margin: 0 0 10px 0;
+}
+
+.upload-product-data-form .submit {
+    width: auto;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.upload-product-data-form .submit input {
+    background: #f90100;
+    color: #fff;
+    padding: 5px 35px;
+    text-decoration: none;
+    display: block;
+}
+
+.upload-product-data-form .chooseFile {
+    padding: 5px 0 0 0;
+}

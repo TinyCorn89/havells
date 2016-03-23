@@ -1,0 +1,73 @@
+/*CASE STUDY PHASE-2 STRT*/
+.caseStudyContainer{
+    width:100%;
+    float:left;
+}
+.caseStudyLeftSec{
+    width:61%;
+    float:left;
+}
+.caseStudyRightSec{
+    width:36%;
+    float:right;
+}
+.caseStudyRightSec img{
+    width:100%;
+}
+.sutainibilityIntro{
+    text-transform:capitalize;
+}
+.caseStudyContainer p{
+    font-size:14px;
+    color:#7c7c7c;
+}
+.caseStudySlider{
+    float: left;
+    margin:30px 5% 50px 5%;
+    position: relative;
+    width:90%;
+}
+.caseStudySlide{
+    float:left;
+    height:170px;
+    width:236px;
+    margin-right:10px;
+}
+.caseStudySlide a img{
+    width:100%;
+    height:100%;
+    border:2px solid #eaeaea;
+    padding:2px;
+}
+.caseStudySliderSec{
+    width:100%;
+    float:left;
+    margin:25px 0 0;
+}
+.caseStudySliderSec .slick-next {
+    background:url(/etc/clientlibs/havells/image/next-prev-arrow-case-study.png) no-repeat left bottom;
+    height:91px;
+    right: -40px;
+    top: 37px;
+    width: 38px;
+}
+.caseStudySliderSec .slick-prev {
+    background:url(/etc/clientlibs/havells/image/next-prev-arrow-case-study.png) no-repeat left top;
+    height:91px;
+    left:-51px;
+    top:37px;
+    width:38px;
+}
+.leftNavHeading {
+    float: left;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: 'SegoeCondensed-Bold';
+    text-transform: uppercase;
+    padding: 15px 10px;
+    background: #f90100;
+    border: 1px solid red;
+}
+/*CASE STUDY PHASE-2 END*/

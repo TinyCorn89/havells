@@ -1,0 +1,4 @@
+jquery.fancybox.js
+jquery.fancybox-thumbs.js
+jquery.fancybox-media.js
+jquery.fancybox-buttons.js

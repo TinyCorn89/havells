@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          title="Dialog"
+          xtype="dialog">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                    jcr:primaryType="cq:Panel"
+                    title="Tab 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+
+                    <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Select Content Path"
+                            name="./path"
+                            xtype="pathfield"/>
+                    <pdf-view
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="View PDF text"
+                            fieldDescription="Enter the text to view PDF"
+                            name="./viewPDF"
+                            xtype="textfield"/>
+                    <total-items
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="6"
+                            fieldDescription="Total items to be displayed on page (for ex: 6)"
+                            fieldLabel="Enter No.of Items per page"
+                            name="./items"
+                            xtype="numberfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

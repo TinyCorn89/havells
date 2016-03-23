@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          title="Job Application Form"
+          xtype="dialog">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <info
+                    jcr:primaryType="cq:Panel"
+                    title="Job Department Info">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <designation
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Job Designation"
+                            name="./designation"
+                            xtype="textfield"/>
+                    <department
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Job Department"
+                            name="./department"
+                            xtype="textfield"/>
+                    <department-mailId
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Department Mail Id"
+                            name="./departmentMailId"
+                            xtype="textfield"/>
+                    <posting-date
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Job Posting date"
+                            name="./posting"
+                            xtype="datefield"/>
+                    <branch
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Department Branch"
+                            name="./branch"
+                            xtype="textfield"/>
+                    <product
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Department Product"
+                            name="./product"
+                            xtype="textfield"/>
+                    <experience
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Experience"
+                            name="./experience"
+                            xtype="textfield"/>
+                    <location
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Enter the Job location"
+                            name="./location"
+                            xtype="textfield"/>
+                    <hash-of-position
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="# of position"
+                            name="./hashOfPosition"
+                            xtype="textfield"/>
+                    <industry-prefrences
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Industry Prefrences"
+                            name="./industryPrefrences"
+                            xtype="textfield"/>
+                </items>
+            </info>
+            <form-needs
+                    jcr:primaryType="cq:Panel"
+                    title="Form Needs">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Heading"
+                            fieldDescription = "Enter the heading which you want to show on the form."
+                            name="./heading"
+                            xtype="textfield"/>
+                    <sub-heading
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Subheading"
+                            fieldDescription = "Enter the sub heading you want to put below the heading."
+                            name="./subHeading"
+                            xtype="textfield"/>
+                    <posted-jobs
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Job Application path"
+                            allowBlank="{Boolean}false"
+                            fieldDescription = "Provide path to store user's job application."
+                            name="./postedJobs"
+                            xtype="textfield"/>
+                    <thank-you
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Thank you"
+                            allowBlank="{Boolean}false"
+                            fieldDescription = "Provide Thank you page Url."
+                            name="./thankYouPageUrl"
+                            xtype="pathfield"/>
+                </items>
+            </form-needs>
+            <error-message
+                    jcr:primaryType="cq:Panel"
+                    title="Error Message">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <user-exist
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="User Exist"
+                            fieldDescription = "Enter the Error message when User Exist."
+                            name="./userExist"
+                            xtype="textfield"/>
+                    <error
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="error"
+                            fieldDescription = "Enter any other error message."
+                            name="./error"
+                            xtype="textfield"/>
+                </items>
+            </error-message>
+        </items>
+    </items>
+</jcr:root>

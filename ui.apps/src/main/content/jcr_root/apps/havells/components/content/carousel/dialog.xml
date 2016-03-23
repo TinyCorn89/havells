@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <basicInfo
+                jcr:primaryType="cq:Panel"
+                title="Basic Information">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <items
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Select Display type of carousel."
+                        fieldLabel="Display Type"
+                        name="./displayType"
+                        type="select"
+                        validateOnBlur="true"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <dots
+                                jcr:primaryType="nt:unstructured"
+                                text="Dispaly Using Dots"
+                                value="D"/>
+                            <arrows
+                                jcr:primaryType="nt:unstructured"
+                                text="Dispaly using Arrow"
+                                value="A"/>
+                        </options>
+                    </items>
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        emptyText="Enter Banner Text"
+                        fieldDescription="Enter banner text is exist else leave it blank."
+                        fieldLabel="Static Banner Text"
+                        name="./bannerText"
+                        xtype="textfield"/>
+                </items>
+            </basicInfo>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,37 @@
+.carousel {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.carousel .buttonWrapper {
+    padding-left: 15px;
+}
+
+.carousel .buttonWrapper .cta .clearBoth {
+   clear:none;
+}
+
+.slick-dots li button {
+    background: #cccccc;
+}
+
+.carousel .slick-prev, .carousel .slick-next {
+    background: url(/etc/clientlibs/havells/image/home-pg-carousel-arrow.png) 0 0 no-repeat;
+    width: 19px;
+    height: 56px;
+    top: 45%;
+}
+
+.carousel .slick-prev {
+    left: 10px;
+}
+
+.carousel .slick-next {
+    right: 10px;
+    background-position: -19px 0;
+}
+@media only screen and (max-width: 479px) {
+    .carousel .slick-prev, .carousel .slick-next {
+        top:20%;
+    }
+}

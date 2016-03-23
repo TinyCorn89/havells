@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="500"
+          title="About Us Information Dialog"
+          width="600"
+          xtype="dialog">
+    <items
+          jcr:primaryType="cq:Widget"
+          xtype="tabpanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <CatalogInfo
+                        jcr:primaryType="cq:Panel"
+                        title="Catalog page creation config">
+                    <items jcr:primaryType="cq:WidgetCollection">
+
+                        <tPath
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Provide templates path : /content/catalogs/havells/templatePages/en"
+                            fieldLabel="Template Pages Root path"
+                            default="/content/catalogs/havells/templatePages/en"
+                            name="./templatePath"
+                            xtype="pathfield"/>
+                        <catalogPath
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Provide catalog base path : /content/catalogs/havells/havells"
+                                fieldLabel="Catalog Root path"
+                                default="/content/catalogs/havells/havells"
+                                name="./catalogPath"
+                                xtype="pathfield"/>
+                        <bluePrint
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Provide catalog blueprint base path : /content/catalogs/havells/havells/baseBluePrintPage"
+                                fieldLabel="Catalog BluePrint BasePage path"
+                                default="/content/catalogs/havells/havells/baseBluePrintPage"
+                                name="./bluePrintPath"
+                                xtype="pathfield"/>
+                    </items>
+                </CatalogInfo>
+                <templateInfo
+                        jcr:primaryType="cq:Panel"
+                        title="Template Page creation config">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <category
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Provide category template path : /content/catalogs/havells/templatePages/base-templates/category"
+                                fieldLabel="Category template path"
+                                default="/content/catalogs/havells/templatePages/base-templates/category"
+                                name="./category"
+                                xtype="pathfield"/>
+                        <subcategory
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Provide sub-category template path : /content/catalogs/havells/templatePages/base-templates/subcategory"
+                                fieldLabel="Subcategory template path"
+                                name="./subcategory"
+                                xtype="pathfield"/>
+                        <productListing
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Provide catalog blueprint base path : /content/catalogs/havells/templatePages/base-templates/listing"
+                                fieldLabel="Product Listing template path"
+                                name="./productListing"
+                                xtype="pathfield"/>
+                    </items>
+                </templateInfo>
+            </items>
+    </items>
+</jcr:root>

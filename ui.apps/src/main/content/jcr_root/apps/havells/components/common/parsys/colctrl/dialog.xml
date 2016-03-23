@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Columns"
+    title="Column Control"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <layout
+            jcr:primaryType="cq:Widget"
+            allowBlank="{Boolean}true"
+            fieldLabel="Column Layout"
+            name="./layout"
+            newStylePath="colctrl/layouts"
+            optionsProvider="CQ.utils.WCM.getStyleOptions"
+            stylePath="layouts"
+            type="select"
+            xtype="selection"/>
+        <border-vertical
+                jcr:primaryType="nt:unstructured"
+                allowBlank="{Boolean}true"
+                fieldLabel="Border Vertical"
+                name="./borderVertical"
+                type="radiogroup"
+                xtype="selection">
+                <options jcr:primaryType="cq:WidgetCollection">
+                    <left
+                            jcr:primaryType="cq:Widget"
+                            text="Left Border"
+                            value="leftBorderBetween"/>
+                    <middle
+                            jcr:primaryType="cq:Widget"
+                            text="Middle Border"
+                            value="leftBorderBetween"/>
+                    <FAQ
+                            jcr:primaryType="cq:Widget"
+                            text="FAQ"
+                            value="faq"/>
+                    <technicalSpecification
+                            jcr:primaryType="cq:Widget"
+                            text="Technical Specification"
+                            value="techspecs"/>
+                    <technicalDrawing
+                            jcr:primaryType="cq:Widget"
+                            text="Technical Drawing"
+                            value="techImages"/>
+                </options>
+        </border-vertical>
+    </items>
+    <listeners
+            jcr:primaryType="nt:unstructured"
+            afterrender="function(dialog){console.log('after Render Called');}"
+            beforesubmit="function(dialog){console.log('before Submit Called');return false;}"/>
+</jcr:root>

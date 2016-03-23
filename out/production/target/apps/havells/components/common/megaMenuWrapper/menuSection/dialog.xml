@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    width="{Long}800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs
+            jcr:primaryType="cq:TabPanel"
+            xtype="tabpanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tab1
+                    jcr:primaryType="nt:unstructured"
+                    title="Top Links"
+                    xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <pagesmultifield
+                            jcr:primaryType="nt:unstructured"
+                            path="/apps/havells/components/common/links/dialog/items/tabs/items/tab1/items.infinity.json"
+                            xtype="cqinclude"/>
+                        <maxNavItems
+                            jcr:primaryType="nt:unstructured"
+                            defaultValue="6"
+                            emptyText="6"
+                            fieldLabel="Maximum items available in navigation"
+                            name="./maxNavItems"
+                            xtype="numberfield"/>
+                    </items>
+                </tab1>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

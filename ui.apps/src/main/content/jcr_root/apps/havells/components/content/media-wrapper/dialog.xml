@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="{Long}400"
+    title="Media Column"
+    width="{Long}600"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Media Column">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <select
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select Column"
+                        name="./column"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <Two
+                                jcr:primaryType="nt:unstructured"
+                                text="Two"
+                                value="two-col"/>
+                            <Three
+                                jcr:primaryType="nt:unstructured"
+                                text="Three"
+                                value="three-col"/>
+                            <Four
+                                jcr:primaryType="nt:unstructured"
+                                text="Four"
+                                value="four-col"/>
+                            <Five
+                                jcr:primaryType="nt:unstructured"
+                                text="Five"
+                                value="five-col"/>
+                        </options>
+                    </select>
+                    <row
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Select Row"
+                            defaultValue="{Long}1"
+                            name="./rowNumber"
+                            xtype="numberfield">
+                    </row>
+                    <margin
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Long}1"
+                        fielddescription="This margin will put space between blocks"
+                        fieldLabel="Margin in px"
+                        name="./margin"
+                        xtype="numberfield"/>
+                    <totalitems
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="{Long}6"
+                            fieldDescription="Total items to be displayed on page (for ex: 6)"
+                            fieldLabel="No. of Items"
+                            name="./items"
+                            xtype="numberfield"/>
+                </items>
+            </tab1>
+            <category
+                    jcr:primaryType="cq:Panel"
+                    title="Category Filter Options">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <filterMessage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Dropdown default text"
+                            fieldDescription="(* optional)Initially selected option in case any Category Filter is not selected"
+                            name="./categoryFilterMessage"
+                            xtype="textfield"/>
+                    <categoryFilters
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Category Filters"
+                            fieldDescription="Provide content category TVC, RCCBMCB"
+                            name="./category"
+                            xtype="multifield"/>
+                </items>
+            </category>
+            <type
+                jcr:primaryType="cq:Panel"
+                title="Type Filter Options">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <filterMessage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Dropdown default text"
+                            fieldDescription="(* optional)Initially selected option in case any Type Filter is not selected"
+                            name="./typeFilterMessage"
+                            xtype="textfield"/>
+                    <typeFilters
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Type Filters"
+                        fieldDescription="Provide content Type Fans,LED, MCB"
+                        name="./type"
+                        xtype="multifield"/>
+                </items>
+            </type>
+            <year
+                    jcr:primaryType="cq:Panel"
+                    title="Year Filter Options">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <filterMessage
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Dropdown default text"
+                            fieldDescription="(* optional)Initially selected option in case any Year Filter is not selected"
+                            name="./yearFilterMessage"
+                            xtype="textfield"/>
+                    <yearFilters
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Year Filters"
+                            name="./filter"
+                            xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                name="./filteryear"
+                                width="155"
+                                xtype="textfield"/>
+                    </yearFilters>
+                </items>
+            </year>
+        </items>
+    </items>
+</jcr:root>

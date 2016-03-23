@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template"
+    jcr:title="Havells productList Page Template "
+    jcr:description="Havells generic product listing page template."
+    allowedPaths="[/content/havells/[^/]+(/.*)?,/content/catalogs/havells/templatePages(/.*)?]"
+    cq:allowedTemplates="/apps/havells/templates/productDetails"
+    ranking="{Long}100">
+    <jcr:content
+            jcr:primaryType="cq:PageContent"
+            sling:resourceType="havells/components/page/productListingPage">
+        <rightPar jcr:primaryType="nt:unstructured"
+                  sling:resourceType="foundation/components/parsys">
+            <productListing
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="havells/components/commerce/productList">
+            </productListing>
+        </rightPar>
+    </jcr:content>
+</jcr:root>

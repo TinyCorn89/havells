@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    width="{Long}800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs
+            jcr:primaryType="cq:TabPanel"
+            xtype="tabpanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tab1
+                        jcr:primaryType="cq:Widget"
+                        title="Report Options"
+                        xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <title
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Report Title"
+                                name="./title"
+                                xtype="textfield"/>
+                        <path
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Report Path"
+                                fieldDescription="Path to Annual Reports Folder"
+                                name="./path"
+                                xtype="pathfield"
+                                rootPath="/content/dam"/>
+                    </items>
+                </tab1>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

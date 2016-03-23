@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    name="./searchPath"
+    title="Search Facets"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <panel
+                jcr:primaryType="cq:Panel"
+                title="Links">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <filterType
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Choose the Filter type"
+                        name="./filterType"
+                        xtype="tags">
+                        <namespaces jcr:primaryType="cq:WidgetCollection">
+                            <ns1
+                                jcr:primaryType="nt:unstructured"
+                                maximum="1"
+                                name="havells"/>
+                        </namespaces>
+                    </filterType>
+                    <filterValues
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Filter Values"
+                        name="./filterValues"
+                        xtype="tags">
+                        <namespaces jcr:primaryType="cq:WidgetCollection">
+                            <ns1
+                                jcr:primaryType="nt:unstructured"
+                                name="havells"/>
+                        </namespaces>
+                    </filterValues>
+                </items>
+            </panel>
+        </items>
+    </items>
+</jcr:root>

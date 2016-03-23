@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="400"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','video','image'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="List"
+    width="600"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <list
+            jcr:primaryType="cq:Widget"
+            title="Media Type"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <mediaType
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="image"
+                    fieldLabel="Media Type"
+                    name="./type"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(){this.findParentByType('tabpanel').manageTabs(this.getValue(),true);}"
+                        selectionchanged="function(box,value){box.findParentByType('tabpanel').manageTabs(value);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            text="Image"
+                            value="image"/>
+                        <video
+                            jcr:primaryType="nt:unstructured"
+                            text="Video"
+                            value="video"/>
+                    </options>
+                </mediaType>
+            </items>
+        </list>
+        <video
+            jcr:primaryType="cq:Widget"
+            title="Video"
+            xtype="panel">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(1); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <id
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Provide youtube video ID.ie NIsp9mho178"
+                    fieldLabel="Video ID"
+                    name="./videoID"
+                    xtype="textfield"/>
+            </items>
+        </video>
+        <image
+            jcr:primaryType="cq:Widget"
+            allowUpload="{Boolean}false"
+            ddGroups="[media]"
+            fileNameParameter="./fileName"
+            fileReferenceParameter="./fileReference"
+            name="./file"
+            requestSuffix=".img.png"
+            title="Thumbnail Image"
+            xtype="html5smartimage">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(2); }"/>
+        </image>
+        <image2
+                jcr:primaryType="cq:Widget"
+                allowUpload="{Boolean}false"
+                ddGroups="[media]"
+                fileNameParameter="./fileName"
+                fileReferenceParameter="./largeImage"
+                name="./file"
+                requestSuffix=".img.png"
+                title="LightBox Image"
+                xtype="html5smartimage"/>
+        <moreinfo
+            jcr:primaryType="cq:Widget"
+            title="More Information"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <alt
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="This value will be shown if no image is present."
+                    fieldLabel="Alt Text"
+                    name="./alt"
+                    xtype="textfield"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./image/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+                <label
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="label (to be shown below link)"
+                        fieldLabel="Label"
+                        name="./label"
+                        xtype="textfield"/>
+                <year
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Value must be an Integer (for ex: 2012)"
+                        fieldLabel="Year"
+                        name="./year"
+                        xtype="numberfield"/>
+                <category
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Provide Category"
+                        fieldLabel="Category"
+                        name="./category"
+                        xtype="textfield"/>
+                <contentType
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Provide content Type TVC,Print, Radio"
+                        fieldLabel="Content Type"
+                        name="./contentType"
+                        xtype="textfield"/>
+            </items>
+        </moreinfo>
+
+    </items>
+</jcr:root>

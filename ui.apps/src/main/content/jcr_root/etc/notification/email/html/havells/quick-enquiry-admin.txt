@@ -1,0 +1,10 @@
+
+Hi,
+
+${userName} has sent a query with details mentioned as follows ::
+
+Name :: ${userName}
+EmailId :: ${userEmailId}
+Mobile No. ::  ${mobile}
+Current Location :: ${location}
+Description :: ${description}

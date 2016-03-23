@@ -1,0 +1,25 @@
+.multifield .small-icon{
+    font-size:1em
+}
+.multifield .med-icon{
+    font-size:1.5em
+}
+.multifield .large-icon{
+    font-size:2em
+}
+.multifield a{
+    color: #666666;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.fa-arrow:before{
+    content:"\f105"
+}
+.analystWrapper .multifield .fa.fa-pdf
+{   min-height: 18px;
+    min-width: 15px;
+    margin-right: 12px;
+    margin-top: 1px;
+    background-image: url("/etc/clientlibs/havells/image/pdf-download-icon.png");
+}

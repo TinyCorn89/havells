@@ -1,0 +1,25 @@
+.milestoneComponent .milestoneContent .richtexteditor ul li:before {
+    color: #f90100;
+    content: "\f111";
+    font-family: fontawesome;
+    font-size: 8px;
+    margin: 0 3% 0 -6%;
+}
+
+.milestoneComponent .milestoneContent .richtexteditor ul {
+    border-bottom: 3px solid #e5e5e5;
+    padding-bottom: 15px;
+    list-style: none;
+}
+
+.milestoneComponent .milestoneContent .richtexteditor ol {
+    border-bottom: 3px solid #e5e5e5;
+    padding-bottom: 15px;
+}
+
+.milestoneComponent .milestoneContent h2 {
+    font-family: "SegoeUI";
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+}

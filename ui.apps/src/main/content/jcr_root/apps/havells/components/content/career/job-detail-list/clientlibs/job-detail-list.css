@@ -1,0 +1,148 @@
+
+/*-------------------------------------------Job Detail Listing --------------------------------------------*/
+.currentOpporWrap {
+    width: 100%;
+    float: left;
+}
+.branceWrapper {
+    float: left;
+    width: 100%;
+    padding: 18px 9px 13px 9px;
+    position: relative;
+    margin: 0 0 35px 0;
+    border: 1px solid #cccccc;
+}
+.branceNumber {
+    position: absolute;
+    top: -14px;
+    left: -16px;
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'SegoeCondensed-Bold';
+    font-weight: normal;
+    line-height: 32px;
+    text-align: center;
+    background: #f90100;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+.currentOppBranch {
+    float: left;
+    width: 353px;
+}
+.currentOppBranch ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.currentOppBranch ul li {
+    float: left;
+    width: 112px;
+    height: 70px;
+    line-height: 100px;
+    text-align: center;
+    margin: 0 5px 5px 0;
+    background: #eaeaea;
+}
+.currentOppBranch ul li span {
+    width: 100%;
+    display: inline-block;
+}
+.experince {
+    float: left;
+    width: 100%;
+    color: #333333;
+    font-size: 14px;
+    font-family: 'SegoeUI';
+    text-decoration: underline;
+    line-height: normal;
+}
+.standard {
+    float: left;
+    width: 100%;
+    color: #333333;
+    font-size: 12px;
+    font-family: 'SegoeUI';
+    line-height: normal;
+    margin: 5px 0 0;
+}
+.industryPreferenceWrapper {
+    float: left;
+    width: 235px;
+    height: 145px;
+    line-height: 187px;
+    text-align: center;
+    margin: 0 5px 0 0;
+    background: #eaeaea;
+}
+.industryPreferenceWrapper span {
+    width: 100%;
+    display: inline-block;
+}
+.industryPreferenceWrapper span .industryPreference {
+    float: left;
+    width: 100%;
+    color: #333333;
+    font-size: 14px;
+    font-family: 'SegoeUI';
+    line-height: normal;
+}
+.industryPreferenceWrapper span .switches {
+    float: left;
+    width: 100%;
+    color: #333333;
+    font-size: 12px;
+    font-family: 'SegoeUI';
+    line-height: normal;
+    margin: 5px 0 0;
+    padding: 0 10%;
+}
+.viweAllWrapper {
+    float: left;
+    width: 114px;
+    height: 145px;
+    line-height: 187px;
+    text-align: center;
+}
+.viweAllWrapper span {
+     width: 100%;
+     display: inline-block;
+ }
+.job-detail-list .viewAll {
+    float: left;
+    width: 100%;
+    line-height: normal;
+    text-align: center;
+}
+.job-detail-list .viewAll a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'SegoeCondensed-Bold';
+    font-weight: normal;
+    display: block;
+    padding: 2px 0;
+    background: #999999;
+}
+.applyButton{
+    float:left;
+    width:100%;
+    margin:5px 0 0;
+    line-height:normal;
+    text-align:center;
+}
+.applyButton a{
+    text-transform:uppercase;
+    text-decoration:none;
+    font-size:16px;
+    color:#fff;
+    font-family: 'SegoeCondensed-Bold';
+    font-weight:normal;
+    display:block;
+    padding:2px 0;
+    background:#f90100;
+}

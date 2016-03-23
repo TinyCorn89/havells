@@ -1,0 +1,25 @@
+.awardContent{
+    width:179px;
+    display:block;
+    font-size:13px;
+    color:#5d5d5d;
+    font-family:"SegoeUI";
+    margin:0 0 10px 0;
+}
+.awardContent span{
+    color:#ff0000;
+    font-weight:bold;
+    font-size:16px;
+    display:block;
+}
+.dateWrap {
+    width: 75px;
+    float: left;
+    font-size: 33px;
+    font-family: "SegoeUI";
+    color: #333333;
+    text-align: right;
+    line-height: 28px;
+    font-weight: lighter;
+    margin-right: 12px;
+}

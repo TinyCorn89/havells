@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+	<filter root="/apps/havells">
+		<exclude pattern="/apps/havells/install" />
+	</filter>
+    <filter root="/apps/social/connect" />
+    <filter root="/apps/commerce/gui" />
+    <filter root="/apps/cq/personalization/components/contextstores/viewedproducts" />
+    <filter root="/etc/scaffolding/havells" />
+	<filter root="/apps/sling" />
+    <filter root="/etc/clientlibs/havells"/>
+    <filter root="/etc/importers/polling/mrpImporter"/>
+    <filter root="/etc/workflow/models/dam/update_asset"/>
+    <filter root="/etc/notification/email/html/havells"/>
+	<filter root="/etc/workflow/launcher/config/havells_create_users"/>
+	<filter root="/etc/workflow/launcher/config/havells_update_profile"/>
+	<filter root="/etc/workflow/launcher/config/havells_comment_reverse_replication"/>
+</workspaceFilter>

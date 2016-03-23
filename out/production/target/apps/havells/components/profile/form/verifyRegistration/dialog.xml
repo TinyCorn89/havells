@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Login"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <first
+                    jcr:primaryType="nt:unstructured"
+                    title="Messages to display"
+                    xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <userCreatedMsg
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Enter Msg For User Creation"
+                            name="./UserCreatedMsg"
+                            xtype="textfield"/>
+                        <userExist
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter Msg For User Already Exist"
+                                name="./userExist"
+                                xtype="textfield"/>
+                        <tokenExpired
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter Msg For Token Expired"
+                                name="./tokenExpired"
+                                xtype="textfield"/>
+                        <tokenNotExist
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter Msg For Token Not Exist"
+                                name="./tokenNotExist"
+                                xtype="textfield"/>
+                    </items>
+                </first>
+                <second
+                        jcr:primaryType="nt:unstructured"
+                        title="Display In Form"
+                        xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <labelToShow
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter any Label to display"
+                                name="./label"
+                                xtype="textfield"/>
+                        <actionForm
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter any action for the form"
+                                name="./action"
+                                xtype="textfield"/>
+                        <intermediatePath
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Enter the intermediate Path"
+                                name="./intermediatePath"
+                                xtype="textfield"/>
+                    </items>
+                </second>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          title="Job Listing"
+          xtype="dialog">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <info
+                    jcr:primaryType="cq:Panel"
+                    title="Job Listing Label">
+                <items jcr:primaryType="cq:WidgetCollection">
+
+                    <branch
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Branch Label"
+                            name="./branchLabel"
+                            xtype="textfield"/>
+                    <product
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Product Label"
+                            name="./productLabel"
+                            xtype="textfield"/>
+                    <experience
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Experience Label"
+                            name="./experienceLabel"
+                            xtype="textfield"/>
+                    <location
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Location Label"
+                            name="./locationLabel"
+                            xtype="textfield"/>
+                    <position
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Position Label"
+                            name="./positionLabel"
+                            xtype="textfield"/>
+                    <hash-of-position
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="# of position Label"
+                            name="./hashOfPositionLabel"
+                            xtype="textfield"/>
+                    <industrial-prefrences
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Industrial Prefrences Label"
+                            name="./industrialPrefrencesLabel"
+                            xtype="textfield"/>
+                </items>
+            </info>
+            <pagination
+                    jcr:primaryType="cq:Panel"
+                    title="Pagination">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <user-exist
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="No Of Page"
+                            fieldDescription = "Enter the no of page you want to show on 1 page."
+                            name="./noOfPage"
+                            xtype="textfield"/>
+                </items>
+            </pagination>
+        </items>
+    </items>
+</jcr:root>

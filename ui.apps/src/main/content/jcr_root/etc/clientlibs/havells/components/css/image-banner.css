@@ -1,0 +1,13 @@
+.image-banner .redFont h2{
+    color: #e02626;
+}
+.image-banner .pinkFont h2{
+    color: #d93051;
+}
+.image-banner .blueFont h2{
+    color: #19559d;
+}
+.image-banner .hpCsrBg {
+    background: no-repeat scroll right top rgba(0, 0, 0, 0);
+}
+

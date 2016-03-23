@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <panel
+                jcr:primaryType="cq:Widget"
+                title="Basic Information"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <galleryheading
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Image Gallery"
+                        fieldLabel="Image Gallery Heading"
+                        name="./heading"
+                        value="Image Gallery"
+                        xtype="textfield"/>
+                    <no-of-slides
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="4"
+                            fieldLabel="No. of Slides"
+                            name="./noOfSlides"
+                            value="4"
+                            xtype="textfield"/>
+                </items>
+            </panel>
+        </items>
+    </items>
+</jcr:root>
